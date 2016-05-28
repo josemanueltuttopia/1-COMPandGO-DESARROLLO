@@ -171,42 +171,6 @@
             </objects>
             <point key="canvasLocation" x="1690.8800000000001" y="-1539.4133333333334"/>
         </scene>
-        <!--PantallaPdf-->
-        <scene sceneID="ilI-gd-5aR">
-            <objects>
-                <viewController title="PantallaPdf" id="lhu-Av-ZWy" customClass="VerPdfViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SYm-MF-RiM">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" id="9JU-dc-jwB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="efk-tV-SLg">
-                                <rect key="frame" x="15" y="18" width="144" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="IconoVuleve.png"/>
-                                <connections>
-                                    <segue destination="sO6-kc-0fl" kind="modal" modalTransitionStyle="crossDissolve" id="ywV-jO-Mhq"/>
-                                </connections>
-                            </button>
-                            <webView contentMode="scaleToFill" id="QbV-nZ-bgf">
-                                <rect key="frame" x="48" y="116" width="677" height="873"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="PantallaPdf" destination="QbV-nZ-bgf" id="uSi-vU-YSn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FBd-pE-8l1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1609" y="507"/>
-        </scene>
         <!--Principal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -431,12 +395,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="3584"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" id="Sai-oc-GCT">
-                                                <rect key="frame" x="0.0" y="0.0" width="768" height="3584"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLargo.jpg" id="zZa-GQ-GnB">
+                                                <rect key="frame" x="-17" y="-34" width="785" height="3618"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="DPW-VA-Ltb">
                                                 <rect key="frame" x="8" y="60" width="768" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="yni-bL-jL5">
+                                                <rect key="frame" x="-2" y="3358" width="770" height="146"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cyF-in-ib5">
@@ -1028,7 +996,7 @@
                                                 </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="kJx-VU-EZs">
-                                                <rect key="frame" x="0.0" y="3008" width="768" height="216"/>
+                                                <rect key="frame" x="101" y="2996" width="464" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.1996732692" blue="0.98715842220000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="1" green="0.13484958080000001" blue="0.00092539059730000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -1037,7 +1005,7 @@
                                                 </date>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jf4-Py-Rsk">
-                                                <rect key="frame" x="186" y="3290" width="46" height="30"/>
+                                                <rect key="frame" x="451" y="3115" width="46" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -1045,20 +1013,12 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LOf-PO-8v9">
-                                                <rect key="frame" x="414" y="3290" width="42" height="21"/>
+                                                <rect key="frame" x="380" y="3115" width="42" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="99b-Wj-Wiu">
-                                                <rect key="frame" x="439" y="3360" width="174" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="IconoVerPfd.png"/>
-                                                <connections>
-                                                    <segue destination="lhu-Av-ZWy" kind="modal" modalTransitionStyle="crossDissolve" id="XDi-1f-pWX"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENVÍA EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDO-7d-C1Y">
                                                 <rect key="frame" x="606" y="3483" width="82" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1066,6 +1026,27 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kvt-ev-lAb">
+                                                <rect key="frame" x="378" y="3360" width="296" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="IconoVerPfd.png"/>
+                                                <connections>
+                                                    <action selector="MuestraFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="Kd9-wN-79U"/>
+                                                </connections>
+                                            </button>
+                                            <webView contentMode="scaleToFill" id="KtY-YQ-nQa">
+                                                <rect key="frame" x="58" y="2594" width="652" height="952"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                            </webView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YYu-3m-kCE">
+                                                <rect key="frame" x="47" y="2594" width="82" height="62"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="CierraBoton2.png"/>
+                                                <connections>
+                                                    <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1079,11 +1060,13 @@
                     <connections>
                         <outlet property="AlcanceVisualMaximoCampo" destination="AKt-FW-mb8" id="AiL-y2-T8a"/>
                         <outlet property="AltitudMaximaCampo" destination="rd4-b5-aX5" id="rc4-E6-qEd"/>
+                        <outlet property="BotonCerrarFlotante" destination="YYu-3m-kCE" id="Gf4-6v-oVJ"/>
                         <outlet property="DescripcionObjetivoCampo" destination="xfG-ZG-ZQo" id="mHQ-6j-C9C"/>
                         <outlet property="DiasProhibidosCampo" destination="Tkj-go-ess" id="fi4-pa-zby"/>
                         <outlet property="DniCifNifOperadorCampo" destination="un9-zc-3gw" id="Ew3-bf-Jw5"/>
                         <outlet property="DniCifNifPilotoCampo" destination="HQ3-P1-RMz" id="BqQ-Tr-Ohz"/>
                         <outlet property="FechaCampo" destination="crp-fm-GNC" id="FZy-WW-FUC"/>
+                        <outlet property="FlotanteMuestraPdf" destination="KtY-YQ-nQa" id="NUZ-Kl-g4o"/>
                         <outlet property="HorarioProhibidoCampo" destination="Hal-7R-Wnj" id="cOB-OV-v3S"/>
                         <outlet property="LocalidadCampo" destination="RwO-ic-jI7" id="JEU-a6-Vgs"/>
                         <outlet property="MailOperadorCampo" destination="OSs-NY-i5O" id="ZwL-Wx-y9h"/>
@@ -1110,6 +1093,8 @@
         <image name="BotobGaleriaGrande.png" width="256" height="256"/>
         <image name="BotonCreaRutaGrande.png" width="256" height="256"/>
         <image name="BotonDocuemntosGrande.png" width="256" height="256"/>
+        <image name="CierraBoton2.png" width="40" height="40"/>
+        <image name="FondoLargo.jpg" width="1080" height="3584"/>
         <image name="FranjaNegra.png" width="1080" height="184"/>
         <image name="IconoAyuda.png" width="95" height="92"/>
         <image name="IconoEmail.png" width="120" height="120"/>
@@ -1122,7 +1107,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6ce-Vc-BkV"/>
-        <segue reference="wB1-9V-iIE"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

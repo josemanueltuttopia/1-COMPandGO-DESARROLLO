@@ -29,6 +29,9 @@
     [ScrollVertical setScrollEnabled:YES];
     [ScrollVertical setContentSize:CGSizeMake(768, 3584)];
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
+    [FlotanteMuestraPdf setHidden:YES];
+    [BotonCerrarFlotante setHidden:YES];
+
     
     // Do any additional setup after loading the view.
 }
@@ -74,6 +77,29 @@
     // Present mail view controller on screen
     [mc addAttachmentData:dataToBeEncrypted mimeType:@"application/pdf" fileName:@"PlanVueloPreliminar.pdf"];
     [self presentViewController:mc animated:YES completion:NULL];
+}
+
+- (IBAction)OcultaFlotantePdf:(id)sender {
+     [FlotanteMuestraPdf setHidden:YES];
+    [BotonCerrarFlotante setHidden:YES];
+}
+
+- (IBAction)MuestraFlotantePdf:(id)sender {
+   /*
+    NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [ruta objectAtIndex:0];
+    NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
+                          documentsDirectory];
+    
+    
+    NSURL *url = [NSURL fileURLWithPath:fileName];
+    NSURLRequest  *solicita = [NSURLRequest requestWithURL:url];
+    [FlotanteMuestraPdf loadRequest:solicita];
+    [FlotanteMuestraPdf setScalesPageToFit:YES];
+*/
+      [FlotanteMuestraPdf setHidden:NO];
+    [BotonCerrarFlotante setHidden:NO];
+
 }
 
 
@@ -143,6 +169,8 @@
 }
 
 
+
+
 /*- (IBAction)CompruebaPdf:(id)sender {
     //NSArray *ruta = NSSearchPathForDirectoriesInDomains
     //(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -197,6 +225,7 @@
     [self dibujaFondoPdf];
     [self imagenFondo];
     [self dibujaTexto];
+    
     
     UIGraphicsEndPDFContext();
 }

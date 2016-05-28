@@ -21,6 +21,8 @@
     
     __weak IBOutlet UILabel *MuestraFechaHora;
 
+ 
+    __weak IBOutlet UIWebView *FlotanteMuestraPdf;
 
 //Cuadros de texto Formulario 1
     IBOutlet UITextField *NombreCompletoPilotoCampo;
@@ -48,6 +50,7 @@
     IBOutlet UITextField *HorarioProhibidoCampo;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
+    __weak IBOutlet UIButton *BotonCerrarFlotante;
 
 //Cuadros de texto Formulario 4
 
@@ -60,7 +63,9 @@
     
 }
 - (IBAction)EnviarEmail:(id)sender;
+- (IBAction)OcultaFlotantePdf:(id)sender;
 
+- (IBAction)MuestraFlotantePdf:(id)sender;
 
 
 - (IBAction)OcultarTeclado:(id)sender;
@@ -70,6 +75,8 @@
 //Selector de Tipo de Operación de la Página 3 del Formulario
 - (IBAction)BotonTipoOperacion:(id)sender;
 - (IBAction)GenerarPdfBoton:(id)sender;
+
+
 
 
 

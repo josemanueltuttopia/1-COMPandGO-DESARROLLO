@@ -15,6 +15,8 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
-| 5.0.4    | Se añaden Fx de Sonido al pulsar sobre los botones del menú principal|
-| 5.0.3    | Visualiza Pdfs. Nueva diseño del PDF "Plan de Vuelo Operacional"|
+| 5.0.6    | Franja sobre botones en Formulario|
+| 5.0.5    | Añadimos fondo HD a formularios.|
+| 5.0.4    | Se añaden Fx de Sonido al pulsar sobre los botones del menú principal.|
+| 5.0.3    | Visualiza Pdfs. Nueva diseño del PDF "Plan de Vuelo Operacional".|
 | 5.0.2    | Envía los archivos pdfs generados (Plan de vuelo operacional) por email.|
