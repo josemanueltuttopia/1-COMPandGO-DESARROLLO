@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */ = {isa = PBXBuildFile; fileRef = D8095F5A1CF1C19B001774CA /* IconoAyuda.png */; };
 		D834EF651CF8BF7B00ED3411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D834EF631CF8BF7B00ED3411 /* Main.storyboard */; };
-		D834EF691CF8CB9200ED3411 /* CierraBoton.png in Resources */ = {isa = PBXBuildFile; fileRef = D834EF681CF8CB9200ED3411 /* CierraBoton.png */; };
-		D834EF6B1CF8CCB100ED3411 /* CierraBoton2.png in Resources */ = {isa = PBXBuildFile; fileRef = D834EF6A1CF8CCB100ED3411 /* CierraBoton2.png */; };
+		D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */ = {isa = PBXBuildFile; fileRef = D84640F41CF9B1E200718744 /* BotonCierra.png */; };
 		D85050221CF8BBA300D39A9A /* FondoLargo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D85050211CF8BBA300D39A9A /* FondoLargo.jpg */; };
 		D8810D811CF213FA006C9A4D /* Pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D801CF213FA006C9A4D /* Pdf.png */; };
 		D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D861CF22B3F006C9A4D /* IconoEmail.png */; };
@@ -70,8 +69,7 @@
 		D8095F5A1CF1C19B001774CA /* IconoAyuda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoAyuda.png; sourceTree = "<group>"; };
 		D8095F5C1CF1C3C6001774CA /* Panton-BlackCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-BlackCaps.otf"; sourceTree = "<group>"; };
 		D834EF641CF8BF7B00ED3411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D834EF681CF8CB9200ED3411 /* CierraBoton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CierraBoton.png; sourceTree = "<group>"; };
-		D834EF6A1CF8CCB100ED3411 /* CierraBoton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CierraBoton2.png; sourceTree = "<group>"; };
+		D84640F41CF9B1E200718744 /* BotonCierra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonCierra.png; sourceTree = "<group>"; };
 		D85050211CF8BBA300D39A9A /* FondoLargo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoLargo.jpg; sourceTree = "<group>"; };
 		D8810D801CF213FA006C9A4D /* Pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pdf.png; sourceTree = "<group>"; };
 		D8810D861CF22B3F006C9A4D /* IconoEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoEmail.png; sourceTree = "<group>"; };
@@ -272,8 +270,7 @@
 		D8F06DF71CEE2E2300858A6A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
-				D834EF6A1CF8CCB100ED3411 /* CierraBoton2.png */,
-				D834EF681CF8CB9200ED3411 /* CierraBoton.png */,
+				D84640F41CF9B1E200718744 /* BotonCierra.png */,
 				D85050211CF8BBA300D39A9A /* FondoLargo.jpg */,
 				D8D46C251CF8A01700A846C5 /* PulsaSonido.m4a */,
 				D8D46B9C1CF749D000A846C5 /* IconoVerPfd.png */,
@@ -409,8 +406,6 @@
 				D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */,
 				D8C4D81F1CF1E249006188EF /* IconoSigue.png in Resources */,
 				D8C4D8191CF1CD86006188EF /* Kelson Sans Regular.otf in Resources */,
-				D834EF691CF8CB9200ED3411 /* CierraBoton.png in Resources */,
-				D834EF6B1CF8CCB100ED3411 /* CierraBoton2.png in Resources */,
 				D8C4D8171CF1CBA4006188EF /* Panton-BlackCaps.otf in Resources */,
 				D8F06DB61CEE0D0A00858A6A /* LaunchScreen.storyboard in Resources */,
 				D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */,
@@ -427,6 +422,7 @@
 				D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */,
 				D8F06E091CEF972000858A6A /* fondo.jpg in Resources */,
 				D8F06E211CF0518B00858A6A /* logofondo.png in Resources */,
+				D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */,
 				D8C4D8211CF1E2E2006188EF /* IconoVuleve.png in Resources */,
 				D8D46B971CF73E8800A846C5 /* PlanVueloOperacional.jpg in Resources */,
 				D8D46B9D1CF749D000A846C5 /* IconoVerPfd.png in Resources */,

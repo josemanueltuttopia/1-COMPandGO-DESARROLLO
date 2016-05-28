@@ -1,10 +1,16 @@
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 //
 //  FormularioViewController.m
 //  COMPandGO
 //
-//  Created by Jose Braña on 21/5/16.
-//  Copyright © 2016 Jose Braña. All rights reserved.
+//  Creado por Jose Braña on 21/5/16.
+//  Copyright © 2016 Jose Braña. TFG. Universidad Internacional de la Rioja
 //
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------//
 
 #import "FormularioViewController.h"
 
@@ -16,13 +22,15 @@
 
 @implementation FormularioViewController
 
-- (void) compruebalongitud
-{
-    if ([NombreCompletoPilotoCampo.text length] >=11)
-    {NombreCompletoPilotoCampo.text = [NombreCompletoPilotoCampo.text substringWithRange:NSMakeRange(0, 10)];
-    }
-}
 
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//MÉTODOS PRINCIPALES-------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+//ACCIONES ADICIONALES DESPUÉS DE CARGAR LA VISTA---------------------------------------//
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,80 +39,25 @@
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
     [FlotanteMuestraPdf setHidden:YES];
     [BotonCerrarFlotante setHidden:YES];
+   }
 
-    
-    // Do any additional setup after loading the view.
-}
+//AVISOS DE PROBLEMAS DE MEMORIA--------------------------------------------------------//
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+//COMPROBADOR DE TAMAÑOS MÁXIMOS DE CAMPOS EN FORMULARIOS-------------------------------//
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
-- (IBAction)EnviarEmail:(id)sender {
-    //Email Subject
-    NSString *emailTitle = @"Plan de Vuelo Preliminar";
-    // Email Content
-    NSString *messageBody = @"Se adjunta archivo Pdf con documentación relativa al Plan de Vuelo Operacional programado en cumplimiento de la normativa legal vigente para la realización de vuelos con drones en espacio aéreo español y no controlado, según la especificaciones de la Agencia Estatal de Seguridad Aérea ";
-    // To address
-    
-    NSArray *ruta = NSSearchPathForDirectoriesInDomains
-    (NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [ruta objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
-                          documentsDirectory];
-    //NSString *Destinatario = MailPilotoCampo.text;
-    NSData *dataToBeEncrypted = [NSData dataWithContentsOfFile:fileName];
-    NSArray *toRecipents = [NSArray arrayWithObject:@"destinatario@dominio.com"];
-    
-    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-    mc.mailComposeDelegate = self;
-    [mc setSubject:emailTitle];
-    [mc setMessageBody:messageBody isHTML:NO];
-    [mc setToRecipients:toRecipents];
-    
-    // Present mail view controller on screen
-    [mc addAttachmentData:dataToBeEncrypted mimeType:@"application/pdf" fileName:@"PlanVueloPreliminar.pdf"];
-    [self presentViewController:mc animated:YES completion:NULL];
+- (void) compruebalongitud
+{
+    if ([NombreCompletoPilotoCampo.text length] >=11)
+    {NombreCompletoPilotoCampo.text = [NombreCompletoPilotoCampo.text substringWithRange:NSMakeRange(0, 10)];
+    }
 }
 
-- (IBAction)OcultaFlotantePdf:(id)sender {
-     [FlotanteMuestraPdf setHidden:YES];
-    [BotonCerrarFlotante setHidden:YES];
-}
-
-- (IBAction)MuestraFlotantePdf:(id)sender {
-   /*
-    NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [ruta objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
-                          documentsDirectory];
-    
-    
-    NSURL *url = [NSURL fileURLWithPath:fileName];
-    NSURLRequest  *solicita = [NSURLRequest requestWithURL:url];
-    [FlotanteMuestraPdf loadRequest:solicita];
-    [FlotanteMuestraPdf setScalesPageToFit:YES];
-*/
-      [FlotanteMuestraPdf setHidden:NO];
-    [BotonCerrarFlotante setHidden:NO];
-
-}
-
-
-    
-
+//COMTROLADOR DE EMAIL------------------------------------------------------------------//
 
 - (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
@@ -126,36 +79,67 @@
             break;
     }
     
-    // Close the Mail Interface
+    // Cierra el Interface de Email
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
+//CREAR PDF-----------------------------------------------------------------------------//
 
-
-
-- (IBAction)OcultarTeclado:(id)sender {
-        [self resignFirstResponder];
+- (void)CrearPdf:(NSString *)rutaArchivo
+{
+    UIGraphicsBeginPDFContextToFile(rutaArchivo, CGRectZero, nil);
+    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 2480, 3508), nil);
+    [self dibujaFondoPdf];
+    [self imagenFondo];
+    [self dibujaTexto];
+    UIGraphicsEndPDFContext();
 }
 
-- (IBAction)EstablecerFechaHora:(id)sender {
-    SelectorFechaHora.datePickerMode = UIDatePickerModeDateAndTime;
-    NSDateFormatter *format = [[NSDateFormatter alloc] init];
-    [format setDateFormat:@"dd-MM-yy hh:mm a "];
-    MuestraFechaHora.text=[format stringFromDate:SelectorFechaHora.date];
+//DIBUJA FONDO PDF----------------------------------------------------------------------//
+
+-(void)dibujaFondoPdf
+{
+    CGContextRef contexto = UIGraphicsGetCurrentContext();
+    CGRect fondoPdf = CGRectMake(0, 0, tamañoPagina.width, tamañoPagina.height);
+    CGContextSetFillColorWithColor(contexto, [[UIColor grayColor]CGColor]);
+    CGContextFillRect(contexto, fondoPdf);
 }
 
-- (IBAction)BotonTipoOperacion:(id)sender {
-    if (SelectorTipoOperacion.selectedSegmentIndex == 0) {
-        TipoOperacionSeleccionada.text = @"VLOS";
-    }
-    if (SelectorTipoOperacion.selectedSegmentIndex == 1) {
-        TipoOperacionSeleccionada.text = @"EVLOS";
-    }
-    if (SelectorTipoOperacion.selectedSegmentIndex == 2) {
-        TipoOperacionSeleccionada.text = @"BVLOS";
-    }
-   
+//DEFINE IMAGEN DE FONDO DEL PDF---------------------------------------------------------//
+
+-(void)imagenFondo
+{
+    CGRect areaImagen = CGRectMake(0, 0, 2480, 3508);
+    UIImage *papel = [UIImage imageNamed:@"PlanVueloOperacional.jpg"];//Ojo con Mayúsculas/Minúsculas en el nombre de Archivo.
+    [papel drawInRect:areaImagen];
 }
+
+//DIBUJA TEXTO--------------------------------------------------------------------------//
+
+-(void)dibujaTexto
+{
+    CGContextRef contexto = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(contexto, [UIColor blackColor].CGColor);
+    CGRect areaTextoNombreCompletoPiloto = CGRectMake(132, 165, 850, 1100);
+    CGRect areaTextoFecha = CGRectMake(132, 800, 850, 1100);
+    UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:20.f];
+    NSString *NombreCompletoPilotoPdf = NombreCompletoPilotoCampo.text;
+    NSString *FechaPdf = FechaCampo.text;
+    NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
+    
+    [NombreCompletoPilotoPdf drawInRect:areaTextoNombreCompletoPiloto withAttributes:misAtributos];
+    [FechaPdf drawInRect:areaTextoFecha withAttributes:misAtributos];
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//ACCIONES PRINCIPALES------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//GENERAR PDF---------------------------------------------------------------------------//
 
 - (IBAction)GenerarPdfBoton:(id)sender {
     tamañoPagina = CGSizeMake(2480, 3508);
@@ -168,108 +152,98 @@
     [self CrearPdf:rutaPdfConNombreArchivo];
 }
 
+//MUESTRA VENTANA FLOTANTE DEL PDF-------------------------------------------------------//
 
-
-
-/*- (IBAction)CompruebaPdf:(id)sender {
-    //NSArray *ruta = NSSearchPathForDirectoriesInDomains
-    //(NSDocumentDirectory, NSUserDomainMask, YES);
-    //NSString *documentsDirectory = [ruta objectAtIndex:0];
-    //NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
-    //                      documentsDirectory];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"PdfFile" ofType:@"pdf"];
-    NSURL *url = [NSURL fileURLWithPath:path];
+- (IBAction)MuestraFlotantePdf:(id)sender {
+    
+    NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [ruta objectAtIndex:0];
+    NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
+                          documentsDirectory];
+    
+    
+    NSURL *url = [NSURL fileURLWithPath:fileName];
     NSURLRequest  *solicita = [NSURLRequest requestWithURL:url];
-    [PantallaPdf loadRequest:solicita];
-    [PantallaPdf setScalesPageToFit:NO];
+    [FlotanteMuestraPdf loadRequest:solicita];
+    [FlotanteMuestraPdf setScalesPageToFit:YES];
     
-
- 
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- (void)CrearPdf:(NSString *)rutaArchivo
-{
-    UIGraphicsBeginPDFContextToFile(rutaArchivo, CGRectZero, nil);
-    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 2480, 3508), nil);
-    [self dibujaFondoPdf];
-    [self imagenFondo];
-    [self dibujaTexto];
-    
-    
-    UIGraphicsEndPDFContext();
+    [FlotanteMuestraPdf setHidden:NO];
+    [BotonCerrarFlotante setHidden:NO];
 }
 
--(void)dibujaFondoPdf
-{
-    CGContextRef contexto = UIGraphicsGetCurrentContext();
-    CGRect fondoPdf = CGRectMake(0, 0, tamañoPagina.width, tamañoPagina.height);
-    CGContextSetFillColorWithColor(contexto, [[UIColor grayColor]CGColor]);//Comprobación de que hay fondo (GRIS)
-    CGContextFillRect(contexto, fondoPdf);
+//ENVIA EMAIL----------------------------------------------------------------------------//
+
+- (IBAction)EnviarEmail:(id)sender {
+    //Asunto del eMail
+    NSString *emailTitle = @"Plan de Vuelo Preliminar";
     
+    //Contenido del eMail
+    NSString *messageBody = @"Se adjunta archivo Pdf con documentación relativa al Plan de Vuelo Operacional programado en cumplimiento de la normativa legal vigente para la realización de vuelos con drones en espacio aéreo español y no controlado, según la especificaciones de la Agencia Estatal de Seguridad Aérea ";
+    
+    //Archivo Adjunto
+    NSArray *ruta = NSSearchPathForDirectoriesInDomains
+    (NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [ruta objectAtIndex:0];
+    NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
+                          documentsDirectory];
+    
+    //NSString *Destinatario = MailPilotoCampo.text;
+    NSData *dataToBeEncrypted = [NSData dataWithContentsOfFile:fileName];
+    NSArray *toRecipents = [NSArray arrayWithObject:@"destinatario@dominio.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    
+    //Muestra el Controlador del Email por la pantalla
+    [mc addAttachmentData:dataToBeEncrypted mimeType:@"application/pdf" fileName:@"PlanVueloPreliminar.pdf"];
+    [self presentViewController:mc animated:YES completion:NULL];
 }
 
--(void)dibujaTexto
-{
-    CGContextRef contexto = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(contexto, [UIColor blackColor].CGColor);
-    CGRect areaTextoNombreCompletoPiloto = CGRectMake(132, 165, 850, 1100);
-    CGRect areaTextoFecha = CGRectMake(132, 800, 850, 1100);
-    UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:20.f];
-    
-    
-    NSString *NombreCompletoPilotoPdf = NombreCompletoPilotoCampo.text;
-    NSString *FechaPdf = FechaCampo.text;
-    
-    NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
-    
-    [NombreCompletoPilotoPdf drawInRect:areaTextoNombreCompletoPiloto withAttributes:misAtributos];
-    [FechaPdf drawInRect:areaTextoFecha withAttributes:misAtributos];
-    
-}
+//OCULTA VENTANA FLOTANTE DEL PDF-------------------------------------------------------//
 
--(void)imagenFondo
-{
-    CGRect areaImagen = CGRectMake(0, 0, 2480, 3508);
-    UIImage *papel = [UIImage imageNamed:@"PlanVueloOperacional.jpg"];//Ojo con Mayúsculas/Minúsculas en el nombre de Archivo.
-    [papel drawInRect:areaImagen];
+- (IBAction)OcultaFlotantePdf:(id)sender {
+     [FlotanteMuestraPdf setHidden:YES];
+    [BotonCerrarFlotante setHidden:YES];
 }
 
 
+//OCULTA TECLADO------------------------------------------------------------------------//
 
+- (IBAction)OcultarTeclado:(id)sender {
+        [self resignFirstResponder];
+}
 
+//ESTABLECE FECHA Y HORA---------------------------------------------------------------//
+
+- (IBAction)EstablecerFechaHora:(id)sender {
+    SelectorFechaHora.datePickerMode = UIDatePickerModeDateAndTime;
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"dd-MM-yy hh:mm a "];
+    MuestraFechaHora.text=[format stringFromDate:SelectorFechaHora.date];
+}
+
+//SELECTOR TIPO DE OPERACION-----------------------------------------------------------//
+
+- (IBAction)BotonTipoOperacion:(id)sender {
+    if (SelectorTipoOperacion.selectedSegmentIndex == 0) {
+        TipoOperacionSeleccionada.text = @"VLOS";
+    }
+    if (SelectorTipoOperacion.selectedSegmentIndex == 1) {
+        TipoOperacionSeleccionada.text = @"EVLOS";
+    }
+    if (SelectorTipoOperacion.selectedSegmentIndex == 2) {
+        TipoOperacionSeleccionada.text = @"BVLOS";
+    }
+}
 
 
 
 @end
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//COMPandGO-----------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////
 

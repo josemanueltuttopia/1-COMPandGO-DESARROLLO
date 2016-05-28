@@ -15,6 +15,8 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
+| 5.0.8    | Reposicionado de Pdf en Página y botón de cierre de vista|
+| 5.0.7    | Texto del código comentado y formteado. Reorganización de Recursos del proyecto en carpetas|
 | 5.0.6    | Franja sobre botones en Formulario|
 | 5.0.5    | Añadimos fondo HD a formularios.|
 | 5.0.4    | Se añaden Fx de Sonido al pulsar sobre los botones del menú principal.|

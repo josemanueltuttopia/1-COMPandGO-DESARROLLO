@@ -1,10 +1,17 @@
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 //
 //  FormularioViewController.h
-//  COMPandGO
+//  COMPandGO. v.5.0.7
 //
-//  Created by Jose Braña on 21/5/16.
-//  Copyright © 2016 Jose Braña. All rights reserved.
-//v1
+//  Creado por Jose Braña on 21/5/16.
+//  Copyright © 2016 Jose Braña. TFG. Universidad Internacional de la Rioja
+//
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------------------------//
+
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>
@@ -12,19 +19,15 @@
 
 @interface FormularioViewController : UIViewController <MFMailComposeViewControllerDelegate>
 {
+
     
-    //IBOutlet UIImageView *Lafoto;
-    //UIImage *imagen;
-    
-    IBOutlet UIScrollView *ScrollVertical;
+    IBOutlet UIScrollView *ScrollVertical;//-----------------SCROLL DEL FORMULARIO
     __weak IBOutlet UIDatePicker *SelectorFechaHora;
-    
     __weak IBOutlet UILabel *MuestraFechaHora;
+    __weak IBOutlet UIWebView *FlotanteMuestraPdf;//---------VISTA DE VENTANA FLOTANTE
 
- 
-    __weak IBOutlet UIWebView *FlotanteMuestraPdf;
-
-//Cuadros de texto Formulario 1
+//CAMPOS DEL FORMULARIO a RELLENAR------------------------------------------------------//
+    
     IBOutlet UITextField *NombreCompletoPilotoCampo;
     IBOutlet UITextField *DniCifNifPilotoCampo;
     IBOutlet UITextField *TlfPilotoCampo;
@@ -36,13 +39,7 @@
     IBOutlet UITextField *MarcaCampo;
     IBOutlet UITextField *ModeloCampo;
     IBOutlet UITextField *NumSerieCampo;
-    
-//Cuadros de texto Formulario 2
-    
-//Cuadros de texto Formulario 3
-    
     IBOutlet UITextField *TipoOperacionSeleccionada;
-    IBOutlet UISegmentedControl *SelectorTipoOperacion;
     IBOutlet UITextField *DescripcionObjetivoCampo;
     IBOutlet UITextField *LocalidadCampo;
     IBOutlet UITextField *MunicipioCampo;
@@ -50,41 +47,32 @@
     IBOutlet UITextField *HorarioProhibidoCampo;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
-    __weak IBOutlet UIButton *BotonCerrarFlotante;
-
-//Cuadros de texto Formulario 4
-
     IBOutlet UITextField *FechaCampo;
-
-
+    IBOutlet UISegmentedControl *SelectorTipoOperacion;
     
-    
-     
-    
+//BOTONES VENTANA FLOTANTE PARA ABRIR Y CERRAR------------------------------------------//
+     __weak IBOutlet UIButton *BotonCerrarFlotante;
 }
-- (IBAction)EnviarEmail:(id)sender;
-- (IBAction)OcultaFlotantePdf:(id)sender;
-
-- (IBAction)MuestraFlotantePdf:(id)sender;
 
 
-- (IBAction)OcultarTeclado:(id)sender;
+//////////////////////////////////////////////////////////////////////////////////////////
+//ACCIONES------------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////
 
-- (IBAction)EstablecerFechaHora:(id)sender;
+- (IBAction)GenerarPdfBoton:(id)sender;//--------------GENERAR PDF
+- (IBAction)MuestraFlotantePdf:(id)sender;//-----------MUESTRA PDF FLOTANTE
+- (IBAction)EnviarEmail:(id)sender; //-----------------ENVÍA EMAIL
 
-//Selector de Tipo de Operación de la Página 3 del Formulario
-- (IBAction)BotonTipoOperacion:(id)sender;
-- (IBAction)GenerarPdfBoton:(id)sender;
-
-
-
-
-
-
-
-
-
-
+- (IBAction)OcultaFlotantePdf:(id)sender;//------------OCULTA PDF FLOTANTE
+- (IBAction)OcultarTeclado:(id)sender;//---------------OCULTA TECLADO
+- (IBAction)EstablecerFechaHora:(id)sender;//----------ESTABLECE FECHA Y HORA
+- (IBAction)BotonTipoOperacion:(id)sender;//-----------TIPO DE OPERACION
 
 
 @end
+
+//////////////////////////////////////////////////////////////////////////////////////////
+//COMPandGO-----------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
