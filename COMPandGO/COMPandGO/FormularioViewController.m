@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [ScrollVertical setScrollEnabled:YES];
-    [ScrollVertical setContentSize:CGSizeMake(768, 3584)];
+    [ScrollVertical setContentSize:CGSizeMake(768, 3058)];
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
     [FlotanteMuestraPdf setHidden:YES];
     [BotonCerrarFlotante setHidden:YES];

@@ -15,6 +15,7 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
+| 5.0.10  | Rediseño de Formulario v2|
 | 5.0.9    | Rediseño de Formulario v1|
 | 5.0.8    | Reposicionado de Pdf en Página y botón de cierre de vista|
 | 5.0.7    | Texto del código comentado y formteado. Reorganización de Recursos del proyecto en carpetas|

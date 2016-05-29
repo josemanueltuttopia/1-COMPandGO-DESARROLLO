@@ -429,7 +429,7 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" id="pL6-vO-hb2">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="BeP-Qa-0Oa">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="3058"/>
@@ -446,55 +446,55 @@
                                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="6FJ-ig-waL">
                                                 <rect key="frame" x="-2" y="195" width="777" height="149"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="Ger-ki-TX2">
                                                 <rect key="frame" x="-9" y="403" width="777" height="149"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="VL1-7Q-nhY">
                                                 <rect key="frame" x="-11" y="613" width="777" height="99"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="w3M-45-sws">
                                                 <rect key="frame" x="0.0" y="792" width="777" height="461"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="Blh-Eu-F8t">
                                                 <rect key="frame" x="-2" y="1300" width="777" height="321"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="Wk7-vZ-04c">
                                                 <rect key="frame" x="-4" y="1737" width="777" height="139"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="l77-xN-YAd">
                                                 <rect key="frame" x="0.0" y="2058" width="777" height="210"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="PQE-Os-eQ3">
                                                 <rect key="frame" x="0.0" y="2321" width="777" height="353"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="e9w-72-UVJ">
                                                 <rect key="frame" x="1" y="1908" width="777" height="98"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peligro.png" id="ziT-1Y-9bM">
@@ -952,24 +952,10 @@
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="TxP-Ka-1og"/>
                                                 </connections>
                                             </textField>
-                                            <webView opaque="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" id="KtY-YQ-nQa">
-                                                <rect key="frame" x="44" y="1" width="679" height="967"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <dataDetectorType key="dataDetectorTypes"/>
-                                            </webView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peligroRestricciones.png" id="23o-d2-VsZ">
                                                 <rect key="frame" x="367" y="2010" width="367" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YYu-3m-kCE">
-                                                <rect key="frame" x="35" y="2584" width="66" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="BotonCierra.png"/>
-                                                <connections>
-                                                    <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAN DE VUELO OPERACIONAL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rra-qs-zmT">
                                                 <rect key="frame" x="99" y="84" width="635" height="79"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1305,6 +1291,20 @@
                                                 <state key="normal" image="IconoVerPfd.png"/>
                                                 <connections>
                                                     <action selector="MuestraFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="Kd9-wN-79U"/>
+                                                </connections>
+                                            </button>
+                                            <webView opaque="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" id="KtY-YQ-nQa">
+                                                <rect key="frame" x="48" y="2058" width="689" height="967"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <dataDetectorType key="dataDetectorTypes"/>
+                                            </webView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YYu-3m-kCE">
+                                                <rect key="frame" x="42" y="2062" width="66" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="BotonCierra.png"/>
+                                                <connections>
+                                                    <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
