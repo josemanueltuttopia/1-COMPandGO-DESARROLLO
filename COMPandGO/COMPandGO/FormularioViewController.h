@@ -21,9 +21,7 @@
 {
 
     
-    IBOutlet UIScrollView *ScrollVertical;//-----------------SCROLL DEL FORMULARIO
-    __weak IBOutlet UIDatePicker *SelectorFechaHora;
-    __weak IBOutlet UILabel *MuestraFechaHora;
+    IBOutlet UIScrollView *ScrollVertical;//-----------------SCROLL DEL
     __weak IBOutlet UIWebView *FlotanteMuestraPdf;//---------VISTA DE VENTANA FLOTANTE
 
 //CAMPOS DEL FORMULARIO a RELLENAR------------------------------------------------------//
@@ -39,16 +37,42 @@
     IBOutlet UITextField *MarcaCampo;
     IBOutlet UITextField *ModeloCampo;
     IBOutlet UITextField *NumSerieCampo;
-    IBOutlet UITextField *TipoOperacionSeleccionada;
     IBOutlet UITextField *DescripcionObjetivoCampo;
     IBOutlet UITextField *LocalidadCampo;
     IBOutlet UITextField *MunicipioCampo;
+    IBOutlet UITextField *ProvinciaCampo;
     IBOutlet UITextField *DiasProhibidosCampo;
-    IBOutlet UITextField *HorarioProhibidoCampo;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
-    IBOutlet UITextField *FechaCampo;
+
     IBOutlet UISegmentedControl *SelectorTipoOperacion;
+    
+    IBOutlet UISegmentedControl *SelectorCondicionesMeteorologicas;
+    
+    
+    IBOutlet UISwitch *ActividadesDeInvestigacion;
+    IBOutlet UISwitch *TratamientosAereos;
+    IBOutlet UISwitch *Fotografia;
+    IBOutlet UISwitch *InvestigacionReconocimiento;
+    IBOutlet UISwitch *ObservacionVigilancia;
+    IBOutlet UISwitch *PublicidadAerea;
+    IBOutlet UISwitch *OperacionesEmergencia;
+    IBOutlet UISwitch *OtrosTrabajos;
+    IBOutlet UISwitch *VueloPrueba;
+    IBOutlet UISwitch *VueloDemostracion;
+    IBOutlet UISwitch *VueloProgramasInvestigacion;
+    IBOutlet UISwitch *VueloDesarrollo;
+    IBOutlet UISwitch *VuelosID;
+    IBOutlet UISwitch *VuelosPruebaNecesarios;
+    IBOutlet UISwitch *NoSujeto;
+    IBOutlet UISwitch *RequiereCoordinacion;
+    IBOutlet UISwitch *NecesarioNOTAM;
+    IBOutlet UISwitch *PerfilTodo;
+    IBOutlet UISwitch *TodosPuntosPerfil;
+    IBOutlet UISwitch *ZonasDespegue;
+    IBOutlet UISwitch *Revisiones;
+    IBOutlet UISwitch *CondicionesMeteorologicasVMC;
+    
     
 //BOTONES VENTANA FLOTANTE PARA ABRIR Y CERRAR------------------------------------------//
      __weak IBOutlet UIButton *BotonCerrarFlotante;
@@ -65,8 +89,8 @@
 
 - (IBAction)OcultaFlotantePdf:(id)sender;//------------OCULTA PDF FLOTANTE
 - (IBAction)OcultarTeclado:(id)sender;//---------------OCULTA TECLADO
-- (IBAction)EstablecerFechaHora:(id)sender;//----------ESTABLECE FECHA Y HORA
-- (IBAction)BotonTipoOperacion:(id)sender;//-----------TIPO DE OPERACION
+
+
 
 
 @end

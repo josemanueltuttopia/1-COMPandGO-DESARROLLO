@@ -84,6 +84,11 @@
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
         </mutableArray>
         <mutableArray key="SpecialElite.ttf">
             <string>SpecialElite-Regular</string>
@@ -219,11 +224,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" id="BMm-r1-HuE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLargo.jpg" id="BMm-r1-HuE">
                                 <rect key="frame" x="0.0" y="0.0" width="1033" height="1033"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logofondo.png" id="JXM-8k-bbB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logofondo.png" id="JXM-8k-bbB">
                                 <rect key="frame" x="23" y="27" width="723" height="840"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -549,15 +554,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="HQ3-P1-RMz">
-                                                <rect key="frame" x="183" y="254" width="185" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
-                                                <connections>
-                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="UEs-tl-c6Z"/>
-                                                </connections>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TLF. (MÓVIL):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IA6-i2-me0">
                                                 <rect key="frame" x="380" y="252" width="168" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -568,7 +564,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="UTu-9n-gmh">
                                                 <rect key="frame" x="513" y="254" width="220" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="YYb-ZG-sWK"/>
@@ -591,6 +588,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="UQm-n1-ZmY">
                                                 <rect key="frame" x="271" y="413" width="463" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -621,6 +619,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="ebQ-BR-TwO">
                                                 <rect key="frame" x="441" y="622" width="289" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -637,6 +636,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="02D-Hq-UJD">
                                                 <rect key="frame" x="148" y="668" width="181" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -653,6 +653,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="eFt-39-nKk">
                                                 <rect key="frame" x="441" y="668" width="289" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -662,6 +663,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" disabledBackground="*Obligatorio" id="OSs-NY-i5O">
                                                 <rect key="frame" x="392" y="507" width="342" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -802,6 +804,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="xfG-ZG-ZQo" userLabel="Descripción y objetivo Campo">
                                                 <rect key="frame" x="50" y="1829" width="678" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -832,7 +835,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="RwO-ic-jI7" userLabel="Localidad Campo">
                                                 <rect key="frame" x="167" y="1919" width="222" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="24"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="bNL-t2-Qeq"/>
@@ -841,7 +845,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="1Go-fh-ziF" userLabel="Localidad Campo">
                                                 <rect key="frame" x="167" y="1959" width="222" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="24"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="VYh-23-2it"/>
@@ -850,7 +855,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="76D-yx-L8p" userLabel="Municipio Campo">
                                                 <rect key="frame" x="509" y="1919" width="219" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="hcj-hd-KgV"/>
@@ -894,7 +900,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="rd4-b5-aX5" userLabel="Altitud máxima AGL Campo">
                                                 <rect key="frame" x="513" y="2182" width="215" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="csO-Fh-78l"/>
@@ -946,7 +953,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="crp-fm-GNC" userLabel="Fecha Campo">
                                                 <rect key="frame" x="513" y="2682" width="215" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="22"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.20901989160000001" blue="0.20014083299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="1"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="TxP-Ka-1og"/>
@@ -991,6 +999,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="pwN-lq-C62">
                                                 <rect key="frame" x="397" y="298" width="337" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -1000,8 +1009,12 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="MWr-pn-oby">
                                                 <rect key="frame" x="271" y="208" width="462" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.9882352941176471" green="0.73725490196078436" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="PeM-b2-HK8"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DNI/NIF/CIF:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cEv-Kh-0yO">
                                                 <rect key="frame" x="50" y="461" width="131" height="34"/>
@@ -1013,6 +1026,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="un9-zc-3gw">
                                                 <rect key="frame" x="183" y="460" width="185" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -1029,6 +1043,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="HcK-1b-s34">
                                                 <rect key="frame" x="513" y="460" width="221" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
@@ -1212,7 +1227,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="Tkj-go-ess" userLabel="Prohibido días Campo">
                                                 <rect key="frame" x="513" y="2142" width="215" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="XpO-of-yex"/>
@@ -1221,7 +1237,8 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="AKt-FW-mb8" userLabel="Alcance máximo vista piloto Campo">
                                                 <rect key="frame" x="513" y="2222" width="215" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
                                                     <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="ahe-VU-7hU"/>
@@ -1307,6 +1324,16 @@
                                                     <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="HQ3-P1-RMz">
+                                                <rect key="frame" x="183" y="254" width="185" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="UEs-tl-c6Z"/>
+                                                </connections>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1315,30 +1342,56 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="3058"/>
                     <connections>
+                        <outlet property="ActividadesDeInvestigacion" destination="pNB-6J-X96" id="RKq-oU-sOC"/>
                         <outlet property="AlcanceVisualMaximoCampo" destination="AKt-FW-mb8" id="AiL-y2-T8a"/>
                         <outlet property="AltitudMaximaCampo" destination="rd4-b5-aX5" id="rc4-E6-qEd"/>
                         <outlet property="BotonCerrarFlotante" destination="YYu-3m-kCE" id="Gf4-6v-oVJ"/>
+                        <outlet property="CondicionesMeteorologicasVMC" destination="cUT-ug-oa2" id="rjo-BO-lVR"/>
                         <outlet property="DescripcionObjetivoCampo" destination="xfG-ZG-ZQo" id="mHQ-6j-C9C"/>
                         <outlet property="DiasProhibidosCampo" destination="Tkj-go-ess" id="fi4-pa-zby"/>
                         <outlet property="DniCifNifOperadorCampo" destination="un9-zc-3gw" id="Ew3-bf-Jw5"/>
                         <outlet property="DniCifNifPilotoCampo" destination="HQ3-P1-RMz" id="BqQ-Tr-Ohz"/>
-                        <outlet property="FechaCampo" destination="crp-fm-GNC" id="FZy-WW-FUC"/>
                         <outlet property="FlotanteMuestraPdf" destination="KtY-YQ-nQa" id="NUZ-Kl-g4o"/>
+                        <outlet property="Fotografia" destination="BrV-e4-zVG" id="bqe-XA-r59"/>
+                        <outlet property="InvestigacionReconocimiento" destination="yT5-lU-uUE" id="mK4-PG-Wbd"/>
                         <outlet property="LocalidadCampo" destination="RwO-ic-jI7" id="JEU-a6-Vgs"/>
                         <outlet property="MailOperadorCampo" destination="OSs-NY-i5O" id="ZwL-Wx-y9h"/>
                         <outlet property="MailPilotoCampo" destination="pwN-lq-C62" id="tvx-uh-3ik"/>
                         <outlet property="MarcaCampo" destination="ebQ-BR-TwO" id="sA9-kJ-PCz"/>
                         <outlet property="ModeloCampo" destination="02D-Hq-UJD" id="9br-cc-jg6"/>
                         <outlet property="MunicipioCampo" destination="76D-yx-L8p" id="nBX-iI-11P"/>
+                        <outlet property="NecesarioNOTAM" destination="XgJ-Vr-5R0" id="UMT-1S-Qua"/>
+                        <outlet property="NoSujeto" destination="7GW-6L-NYg" id="q6u-YF-qjp"/>
                         <outlet property="NombreCompletoOperadorCampo" destination="UQm-n1-ZmY" id="krt-Lm-oMR"/>
                         <outlet property="NombreCompletoPilotoCampo" destination="MWr-pn-oby" id="GUe-YD-ZPl"/>
                         <outlet property="NumSerieCampo" destination="eFt-39-nKk" id="a6V-U2-01J"/>
+                        <outlet property="ObservacionVigilancia" destination="Tb9-6O-k2a" id="aNp-ur-0ON"/>
+                        <outlet property="OperacionesEmergencia" destination="2OX-iS-27Q" id="khK-VA-hVU"/>
+                        <outlet property="OtrosTrabajos" destination="fCT-L8-dfx" id="TTO-eG-7aK"/>
+                        <outlet property="PerfilTodo" destination="REu-2L-PcY" id="56M-rM-7cV"/>
+                        <outlet property="ProvinciaCampo" destination="1Go-fh-ziF" id="byg-pE-5OB"/>
+                        <outlet property="PublicidadAerea" destination="t7b-Hx-wWC" id="Gkg-yC-8m9"/>
+                        <outlet property="RequiereCoordinacion" destination="g5o-86-cDQ" id="uVk-jH-1JF"/>
+                        <outlet property="Revisiones" destination="1x1-Fs-dKM" id="sKc-2h-LYn"/>
                         <outlet property="ScrollVertical" destination="pL6-vO-hb2" id="O5w-2u-zyu"/>
+                        <outlet property="SelectorCondicionesMeteorologicas" destination="Mx7-40-V8g" id="1q8-zZ-1Cf"/>
+                        <outlet property="SelectorTipoOperacion" destination="XTX-Yz-oN4" id="dJe-li-V8t"/>
                         <outlet property="TlfOperadorCampo" destination="HcK-1b-s34" id="Dfp-tY-21L"/>
                         <outlet property="TlfPilotoCampo" destination="UTu-9n-gmh" id="fQG-ny-G6g"/>
+                        <outlet property="TodosPuntosPerfil" destination="yLv-Le-EFc" id="rEe-ju-Pgf"/>
+                        <outlet property="TratamientosAereos" destination="Mci-zB-JUt" id="sI0-cZ-mWf"/>
+                        <outlet property="VueloDemostracion" destination="Mpi-oE-GJm" id="Q79-WK-3Me"/>
+                        <outlet property="VueloDesarrollo" destination="wMx-Ci-Jng" id="7jz-WA-7QP"/>
+                        <outlet property="VueloProgramasInvestigacion" destination="KPt-hk-TSy" id="ho7-LZ-oBV"/>
+                        <outlet property="VueloPrueba" destination="eWR-ps-WUM" id="0Fc-C6-Oct"/>
+                        <outlet property="VuelosID" destination="Kpw-pp-XZ9" id="udu-sF-dXA"/>
+                        <outlet property="VuelosPruebaNecesarios" destination="INf-dT-TJD" id="RB2-WA-SwD"/>
+                        <outlet property="ZonasDespegue" destination="RL6-Yh-vqN" id="kHD-Nl-EDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2s-bN-4D2" userLabel="First Responder" sceneMemberID="firstResponder"/>

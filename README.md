@@ -15,7 +15,9 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
-| 5.0.10  | Rediseño de Formulario v2|
+| 5.2.0  | Segemented Controllers y Checkers termiandos|
+| 5.1.0  | Alinecioanes de campos de formularios, posicion de campos en pdf|
+| 5.0.10  | Rediseño de Formulario v2 y camnio de colores de TextFlields|
 | 5.0.9    | Rediseño de Formulario v1|
 | 5.0.8    | Reposicionado de Pdf en Página y botón de cierre de vista|
 | 5.0.7    | Texto del código comentado y formteado. Reorganización de Recursos del proyecto en carpetas|
