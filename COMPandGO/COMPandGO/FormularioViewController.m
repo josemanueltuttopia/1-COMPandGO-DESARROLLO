@@ -39,6 +39,10 @@
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
     [FlotanteMuestraPdf setHidden:YES];
     [BotonCerrarFlotante setHidden:YES];
+    NombreCompletoPilotoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    DniCifNifPilotoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+
+
    }
 
 //AVISOS DE PROBLEMAS DE MEMORIA--------------------------------------------------------//

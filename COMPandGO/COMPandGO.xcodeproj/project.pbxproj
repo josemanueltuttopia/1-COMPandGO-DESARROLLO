@@ -9,8 +9,19 @@
 /* Begin PBXBuildFile section */
 		D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */ = {isa = PBXBuildFile; fileRef = D8095F5A1CF1C19B001774CA /* IconoAyuda.png */; };
 		D834EF651CF8BF7B00ED3411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D834EF631CF8BF7B00ED3411 /* Main.storyboard */; };
+		D83E658C1CFA00D500143421 /* peligroTipoOperacion.png in Resources */ = {isa = PBXBuildFile; fileRef = D83E658B1CFA00D500143421 /* peligroTipoOperacion.png */; };
+		D83E658E1CFA09C000143421 /* peligroRestricciones.png in Resources */ = {isa = PBXBuildFile; fileRef = D83E658D1CFA09C000143421 /* peligroRestricciones.png */; };
+		D83E65901CFA0EE800143421 /* peligroMeteorologia.png in Resources */ = {isa = PBXBuildFile; fileRef = D83E658F1CFA0EE800143421 /* peligroMeteorologia.png */; };
 		D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */ = {isa = PBXBuildFile; fileRef = D84640F41CF9B1E200718744 /* BotonCierra.png */; };
-		D85050221CF8BBA300D39A9A /* FondoLargo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D85050211CF8BBA300D39A9A /* FondoLargo.jpg */; };
+		D84640FB1CF9BB9000718744 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D84640FA1CF9BB6A00718744 /* SpecialElite.ttf */; };
+		D84640FD1CF9BCED00718744 /* FondoLargo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84640FC1CF9BCED00718744 /* FondoLargo.jpg */; };
+		D84640FF1CF9CF0F00718744 /* blanco.png in Resources */ = {isa = PBXBuildFile; fileRef = D84640FE1CF9CF0F00718744 /* blanco.png */; };
+		D84641011CF9DA5100718744 /* peligro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D84641001CF9DA5100718744 /* peligro.jpg */; };
+		D84641031CF9DB9900718744 /* peligro.png in Resources */ = {isa = PBXBuildFile; fileRef = D84641021CF9DB9900718744 /* peligro.png */; };
+		D84641051CF9DD8400718744 /* peligroRaya.png in Resources */ = {isa = PBXBuildFile; fileRef = D84641041CF9DD8400718744 /* peligroRaya.png */; };
+		D84641071CF9E2E600718744 /* peligroOperador.png in Resources */ = {isa = PBXBuildFile; fileRef = D84641061CF9E2E600718744 /* peligroOperador.png */; };
+		D84641091CF9E4CC00718744 /* peligroAeronave.png in Resources */ = {isa = PBXBuildFile; fileRef = D84641081CF9E4CC00718744 /* peligroAeronave.png */; };
+		D846410B1CF9E97200718744 /* peligroTipoDeVuelo.png in Resources */ = {isa = PBXBuildFile; fileRef = D846410A1CF9E97200718744 /* peligroTipoDeVuelo.png */; };
 		D8810D811CF213FA006C9A4D /* Pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D801CF213FA006C9A4D /* Pdf.png */; };
 		D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D861CF22B3F006C9A4D /* IconoEmail.png */; };
 		D8810D891CF22C24006C9A4D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8810D881CF22C24006C9A4D /* MessageUI.framework */; };
@@ -69,8 +80,19 @@
 		D8095F5A1CF1C19B001774CA /* IconoAyuda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoAyuda.png; sourceTree = "<group>"; };
 		D8095F5C1CF1C3C6001774CA /* Panton-BlackCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Panton-BlackCaps.otf"; sourceTree = "<group>"; };
 		D834EF641CF8BF7B00ED3411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83E658B1CFA00D500143421 /* peligroTipoOperacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroTipoOperacion.png; sourceTree = "<group>"; };
+		D83E658D1CFA09C000143421 /* peligroRestricciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroRestricciones.png; sourceTree = "<group>"; };
+		D83E658F1CFA0EE800143421 /* peligroMeteorologia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroMeteorologia.png; sourceTree = "<group>"; };
 		D84640F41CF9B1E200718744 /* BotonCierra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonCierra.png; sourceTree = "<group>"; };
-		D85050211CF8BBA300D39A9A /* FondoLargo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoLargo.jpg; sourceTree = "<group>"; };
+		D84640FA1CF9BB6A00718744 /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
+		D84640FC1CF9BCED00718744 /* FondoLargo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FondoLargo.jpg; sourceTree = "<group>"; };
+		D84640FE1CF9CF0F00718744 /* blanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blanco.png; sourceTree = "<group>"; };
+		D84641001CF9DA5100718744 /* peligro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peligro.jpg; sourceTree = "<group>"; };
+		D84641021CF9DB9900718744 /* peligro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligro.png; sourceTree = "<group>"; };
+		D84641041CF9DD8400718744 /* peligroRaya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroRaya.png; sourceTree = "<group>"; };
+		D84641061CF9E2E600718744 /* peligroOperador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroOperador.png; sourceTree = "<group>"; };
+		D84641081CF9E4CC00718744 /* peligroAeronave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroAeronave.png; sourceTree = "<group>"; };
+		D846410A1CF9E97200718744 /* peligroTipoDeVuelo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peligroTipoDeVuelo.png; sourceTree = "<group>"; };
 		D8810D801CF213FA006C9A4D /* Pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pdf.png; sourceTree = "<group>"; };
 		D8810D861CF22B3F006C9A4D /* IconoEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoEmail.png; sourceTree = "<group>"; };
 		D8810D881CF22C24006C9A4D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -270,8 +292,19 @@
 		D8F06DF71CEE2E2300858A6A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D83E658F1CFA0EE800143421 /* peligroMeteorologia.png */,
+				D83E658D1CFA09C000143421 /* peligroRestricciones.png */,
+				D83E658B1CFA00D500143421 /* peligroTipoOperacion.png */,
+				D846410A1CF9E97200718744 /* peligroTipoDeVuelo.png */,
+				D84641081CF9E4CC00718744 /* peligroAeronave.png */,
+				D84641061CF9E2E600718744 /* peligroOperador.png */,
+				D84641041CF9DD8400718744 /* peligroRaya.png */,
+				D84641021CF9DB9900718744 /* peligro.png */,
+				D84641001CF9DA5100718744 /* peligro.jpg */,
+				D84640FE1CF9CF0F00718744 /* blanco.png */,
+				D84640FA1CF9BB6A00718744 /* SpecialElite.ttf */,
+				D84640FC1CF9BCED00718744 /* FondoLargo.jpg */,
 				D84640F41CF9B1E200718744 /* BotonCierra.png */,
-				D85050211CF8BBA300D39A9A /* FondoLargo.jpg */,
 				D8D46C251CF8A01700A846C5 /* PulsaSonido.m4a */,
 				D8D46B9C1CF749D000A846C5 /* IconoVerPfd.png */,
 				D8D46B961CF73E8800A846C5 /* PlanVueloOperacional.jpg */,
@@ -400,29 +433,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84640FB1CF9BB9000718744 /* SpecialElite.ttf in Resources */,
 				D8810D811CF213FA006C9A4D /* Pdf.png in Resources */,
+				D83E65901CFA0EE800143421 /* peligroMeteorologia.png in Resources */,
 				D834EF651CF8BF7B00ED3411 /* Main.storyboard in Resources */,
 				D8D46B9F1CF7550200A846C5 /* PlanVueloPreliminar.pdf in Resources */,
 				D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */,
+				D83E658C1CFA00D500143421 /* peligroTipoOperacion.png in Resources */,
+				D83E658E1CFA09C000143421 /* peligroRestricciones.png in Resources */,
+				D84641051CF9DD8400718744 /* peligroRaya.png in Resources */,
 				D8C4D81F1CF1E249006188EF /* IconoSigue.png in Resources */,
+				D84641031CF9DB9900718744 /* peligro.png in Resources */,
 				D8C4D8191CF1CD86006188EF /* Kelson Sans Regular.otf in Resources */,
 				D8C4D8171CF1CBA4006188EF /* Panton-BlackCaps.otf in Resources */,
 				D8F06DB61CEE0D0A00858A6A /* LaunchScreen.storyboard in Resources */,
 				D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */,
 				D8D46C261CF8A01700A846C5 /* PulsaSonido.m4a in Resources */,
-				D85050221CF8BBA300D39A9A /* FondoLargo.jpg in Resources */,
 				D8F06E231CF0A79000858A6A /* PV.png in Resources */,
+				D84641091CF9E4CC00718744 /* peligroAeronave.png in Resources */,
+				D84640FF1CF9CF0F00718744 /* blanco.png in Resources */,
 				D8F06DB31CEE0D0A00858A6A /* Assets.xcassets in Resources */,
 				D8C4D81D1CF1E195006188EF /* SigueIcono.png in Resources */,
 				D8F06E191CEFA13F00858A6A /* BotonDocuemntosGrande.png in Resources */,
 				D8F06E181CEFA13F00858A6A /* BotobGaleriaGrande.png in Resources */,
 				D8F06E051CEF93A100858A6A /* Kelson Sans Light.otf in Resources */,
+				D846410B1CF9E97200718744 /* peligroTipoDeVuelo.png in Resources */,
+				D84641071CF9E2E600718744 /* peligroOperador.png in Resources */,
 				D8F06DF91CEE2F2A00858A6A /* fondo2.jpg in Resources */,
 				D8F06E171CEFA13F00858A6A /* BotonCreaRutaGrande.png in Resources */,
 				D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */,
+				D84640FD1CF9BCED00718744 /* FondoLargo.jpg in Resources */,
 				D8F06E091CEF972000858A6A /* fondo.jpg in Resources */,
 				D8F06E211CF0518B00858A6A /* logofondo.png in Resources */,
 				D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */,
+				D84641011CF9DA5100718744 /* peligro.jpg in Resources */,
 				D8C4D8211CF1E2E2006188EF /* IconoVuleve.png in Resources */,
 				D8D46B971CF73E8800A846C5 /* PlanVueloOperacional.jpg in Resources */,
 				D8D46B9D1CF749D000A846C5 /* IconoVerPfd.png in Resources */,
