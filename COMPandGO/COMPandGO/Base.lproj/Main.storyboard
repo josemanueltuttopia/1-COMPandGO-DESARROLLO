@@ -362,10 +362,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="JNG-6f-lIm">
-                                <rect key="frame" x="671" y="27" width="362" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RNp-9M-S4j">
                                 <rect key="frame" x="68" y="368" width="183" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -433,7 +429,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" id="pL6-vO-hb2">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="3000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="BeP-Qa-0Oa">
@@ -554,6 +550,16 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="HQ3-P1-RMz">
+                                                <rect key="frame" x="183" y="254" width="185" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="UEs-tl-c6Z"/>
+                                                </connections>
+                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TLF. (MÓVIL):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IA6-i2-me0">
                                                 <rect key="frame" x="380" y="252" width="168" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -950,16 +956,6 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="crp-fm-GNC" userLabel="Fecha Campo">
-                                                <rect key="frame" x="513" y="2682" width="215" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="textColor" red="0.98823529409999999" green="0.20901989160000001" blue="0.20014083299999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="1"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                                <connections>
-                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="TxP-Ka-1og"/>
-                                                </connections>
-                                            </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peligroRestricciones.png" id="23o-d2-VsZ">
                                                 <rect key="frame" x="367" y="2010" width="367" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1324,16 +1320,40 @@
                                                     <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*Obligatorio" textAlignment="natural" minimumFontSize="17" background="blanco.png" id="HQ3-P1-RMz">
-                                                <rect key="frame" x="183" y="254" width="185" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JZA-EQ-Qii">
+                                                <rect key="frame" x="516" y="2682" width="124" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.20901989160000001" blue="0.20014083299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CIL-T7-D59">
+                                                <rect key="frame" x="334" y="2728" width="104" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="DEFINE FECHA"/>
                                                 <connections>
-                                                    <action selector="OcultarTeclado:" destination="sO6-kc-0fl" eventType="editingDidEndOnExit" id="UEs-tl-c6Z"/>
+                                                    <action selector="BotonDefineFEcha:" destination="sO6-kc-0fl" eventType="touchUpInside" id="jaf-23-2vF"/>
                                                 </connections>
-                                            </textField>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gris.png" id="Xch-ae-vsk">
+                                                <rect key="frame" x="222" y="2366" width="392" height="271"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="45r-GP-POD">
+                                                <rect key="frame" x="246" y="2413" width="361" height="216"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="486316460.93286699">
+                                                    <!--2016-05-30 15:54:20 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gLu-dy-0mo">
+                                                <rect key="frame" x="246" y="2376" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="CierraFechaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="JPN-w7-Ch4"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1351,12 +1371,16 @@
                         <outlet property="AlcanceVisualMaximoCampo" destination="AKt-FW-mb8" id="AiL-y2-T8a"/>
                         <outlet property="AltitudMaximaCampo" destination="rd4-b5-aX5" id="rc4-E6-qEd"/>
                         <outlet property="BotonCerrarFlotante" destination="YYu-3m-kCE" id="Gf4-6v-oVJ"/>
+                        <outlet property="CierraFechaBoton" destination="gLu-dy-0mo" id="jj0-LI-o0p"/>
                         <outlet property="CondicionesMeteorologicasVMC" destination="cUT-ug-oa2" id="rjo-BO-lVR"/>
+                        <outlet property="DefineFecha" destination="CIL-T7-D59" id="ZkV-8b-LjJ"/>
                         <outlet property="DescripcionObjetivoCampo" destination="xfG-ZG-ZQo" id="mHQ-6j-C9C"/>
                         <outlet property="DiasProhibidosCampo" destination="Tkj-go-ess" id="fi4-pa-zby"/>
                         <outlet property="DniCifNifOperadorCampo" destination="un9-zc-3gw" id="Ew3-bf-Jw5"/>
                         <outlet property="DniCifNifPilotoCampo" destination="HQ3-P1-RMz" id="BqQ-Tr-Ohz"/>
+                        <outlet property="Fecha" destination="JZA-EQ-Qii" id="ENk-wb-P2f"/>
                         <outlet property="FlotanteMuestraPdf" destination="KtY-YQ-nQa" id="NUZ-Kl-g4o"/>
+                        <outlet property="FlotanteSelectorFecha" destination="Xch-ae-vsk" id="5dY-lD-wRI"/>
                         <outlet property="Fotografia" destination="BrV-e4-zVG" id="bqe-XA-r59"/>
                         <outlet property="InvestigacionReconocimiento" destination="yT5-lU-uUE" id="mK4-PG-Wbd"/>
                         <outlet property="LocalidadCampo" destination="RwO-ic-jI7" id="JEU-a6-Vgs"/>
@@ -1380,6 +1404,7 @@
                         <outlet property="Revisiones" destination="1x1-Fs-dKM" id="sKc-2h-LYn"/>
                         <outlet property="ScrollVertical" destination="pL6-vO-hb2" id="O5w-2u-zyu"/>
                         <outlet property="SelectorCondicionesMeteorologicas" destination="Mx7-40-V8g" id="1q8-zZ-1Cf"/>
+                        <outlet property="SelectorDatePicker" destination="45r-GP-POD" id="Qsc-0f-zzp"/>
                         <outlet property="SelectorTipoOperacion" destination="XTX-Yz-oN4" id="dJe-li-V8t"/>
                         <outlet property="TlfOperadorCampo" destination="HcK-1b-s34" id="Dfp-tY-21L"/>
                         <outlet property="TlfPilotoCampo" destination="UTu-9n-gmh" id="fQG-ny-G6g"/>
@@ -1415,6 +1440,7 @@
         <image name="blanco.png" width="635" height="79"/>
         <image name="fondo.jpg" width="1536" height="2048"/>
         <image name="fondo2.jpg" width="1920" height="1080"/>
+        <image name="gris.png" width="113" height="84"/>
         <image name="logofondo.png" width="807" height="849"/>
         <image name="peligro.png" width="312" height="32"/>
         <image name="peligroAeronave.png" width="376" height="32"/>

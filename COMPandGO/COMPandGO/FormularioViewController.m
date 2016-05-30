@@ -39,6 +39,10 @@
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
     [FlotanteMuestraPdf setHidden:YES];
     [BotonCerrarFlotante setHidden:YES];
+    [FlotanteSelectorFecha setHidden:YES];
+    [_SelectorDatePicker setHidden:YES];
+     [CierraFechaBoton setHidden:YES];
+ 
     
     //Alineaciónes verticales de contenidos de TexFields de los formularios
     NombreCompletoPilotoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
@@ -59,6 +63,10 @@
        LocalidadCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     AltitudMaximaCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     AlcanceVisualMaximoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    
+    
+    
+    
     
    }
 
@@ -329,10 +337,13 @@
     //METEOROLOGÍA-------------------------------------------------------------//
     
     //Puntos gordos
-    CGRect areaCondicionVMC = CGRectMake(1760, 2715, 2480, 3508);
+    CGRect areaCondicionVMC = CGRectMake(1760, 2718, 2480, 3508);
     NSString *CondicionVMCPdf =   @"·";
-    CGRect areaCondicionIMC = CGRectMake(2008, 2715, 2680, 3508);
+    CGRect areaCondicionIMC = CGRectMake(2008, 2718, 2480, 3508);
     NSString *CondicionIMCPdf =   @"·";
+    
+    
+
 
     
     //Puntos
@@ -462,7 +473,7 @@
     }
     
     if (SelectorTipoOperacion.selectedSegmentIndex == 2) {
-            [EVLOSPdf drawInRect:areaBVLOS withAttributes:misAtributospuntogordo];
+        [EVLOSPdf drawInRect:areaBVLOS withAttributes:misAtributospuntogordo];}
     
     
 
@@ -521,8 +532,12 @@
         if (SelectorCondicionesMeteorologicas.selectedSegmentIndex == 1) {
             [CondicionIMCPdf drawInRect:areaCondicionIMC withAttributes:misAtributospuntogordo];
         }
-      
 
+        
+        
+        
+        
+        
     //Puntos
     
     if (PerfilTodo.on) {
@@ -563,7 +578,7 @@
 
 }
 
-}
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -655,6 +670,22 @@
 
 
 
+- (IBAction)BotonDefineFEcha:(id)sender {
+    [FlotanteSelectorFecha setHidden:NO];
+    [_SelectorDatePicker setHidden:NO];
+    [CierraFechaBoton setHidden:NO];
+}
+
+- (IBAction)CierraFechaBoton:(id)sender {
+    NSDateFormatter *formato=[[NSDateFormatter alloc]init];
+    [formato setDateFormat:@"dd/MMM/YYY hh:min a"];
+    Fecha.text=[NSString stringWithFormat:@"%@",[formato stringFromDate:_SelectorDatePicker.date]];
+
+
+    [FlotanteSelectorFecha setHidden:YES];
+    [_SelectorDatePicker setHidden:YES];
+    [CierraFechaBoton setHidden:YES];
+}
 @end
 
 //////////////////////////////////////////////////////////////////////////////////////////

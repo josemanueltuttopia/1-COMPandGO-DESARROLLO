@@ -24,8 +24,10 @@
     IBOutlet UIScrollView *ScrollVertical;//-----------------SCROLL DEL
     __weak IBOutlet UIWebView *FlotanteMuestraPdf;//---------VISTA DE VENTANA FLOTANTE
 
+    IBOutlet UIImageView *FlotanteSelectorFecha;
 //CAMPOS DEL FORMULARIO a RELLENAR------------------------------------------------------//
- 
+    
+    //TextFileds
     IBOutlet UITextField *NombreCompletoPilotoCampo;
     IBOutlet UITextField *DniCifNifPilotoCampo;
     IBOutlet UITextField *TlfPilotoCampo;
@@ -44,12 +46,13 @@
     IBOutlet UITextField *DiasProhibidosCampo;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
-
+    
+    //Selectores
     IBOutlet UISegmentedControl *SelectorTipoOperacion;
-    
     IBOutlet UISegmentedControl *SelectorCondicionesMeteorologicas;
+    IBOutlet UIButton *CierraFechaBoton;
     
-    
+    //Cehecks
     IBOutlet UISwitch *ActividadesDeInvestigacion;
     IBOutlet UISwitch *TratamientosAereos;
     IBOutlet UISwitch *Fotografia;
@@ -72,12 +75,12 @@
     IBOutlet UISwitch *ZonasDespegue;
     IBOutlet UISwitch *Revisiones;
     IBOutlet UISwitch *CondicionesMeteorologicasVMC;
-    
+    IBOutlet UILabel *Fecha;
     
 //BOTONES VENTANA FLOTANTE PARA ABRIR Y CERRAR------------------------------------------//
      __weak IBOutlet UIButton *BotonCerrarFlotante;
 }
-
+@property (strong, nonatomic) IBOutlet UIDatePicker *SelectorDatePicker;
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //ACCIONES------------------------------------------------------------------------------//
@@ -86,11 +89,12 @@
 - (IBAction)GenerarPdfBoton:(id)sender;//--------------GENERAR PDF
 - (IBAction)MuestraFlotantePdf:(id)sender;//-----------MUESTRA PDF FLOTANTE
 - (IBAction)EnviarEmail:(id)sender; //-----------------ENVÍA EMAIL
-
 - (IBAction)OcultaFlotantePdf:(id)sender;//------------OCULTA PDF FLOTANTE
 - (IBAction)OcultarTeclado:(id)sender;//---------------OCULTA TECLADO
+@property (strong, nonatomic) IBOutlet UIButton *DefineFecha;
+- (IBAction)BotonDefineFEcha:(id)sender;
 
-
+- (IBAction)CierraFechaBoton:(id)sender;
 
 
 @end
