@@ -15,16 +15,18 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
-| 5.2.2  | Sonidos en Ckecks|
-| 5.2.1  | Selector Emergente de Fecha funcionando con una etiqueta|
-| 5.2.0  | Segemented Controllers y Checkers termiandos|
-| 5.1.0  | Alinecioanes de campos de formularios, posicion de campos en pdf|
+| 5.3.00  | Se añade funcion en menú Principal: Grabaciones|
+| 5.2.02  | Sonidos en Segmented Controllers del Formulario|
+| 5.2.02  | Sonidos en Ckecks del Formulario|
+| 5.2.01  | Selector Emergente de Fecha funcionando con una etiqueta|
+| 5.2.00  | Segemented Controllers y Checkers termiandos|
+| 5.1.00  | Alinecioanes de campos de formularios, posicion de campos en pdf|
 | 5.0.10  | Rediseño de Formulario v2 y camnio de colores de TextFlields|
-| 5.0.9    | Rediseño de Formulario v1|
-| 5.0.8    | Reposicionado de Pdf en Página y botón de cierre de vista|
-| 5.0.7    | Texto del código comentado y formteado. Reorganización de Recursos del proyecto en carpetas|
-| 5.0.6    | Franja sobre botones en Formulario|
-| 5.0.5    | Añadimos fondo HD a formularios.|
-| 5.0.4    | Se añaden Fx de Sonido al pulsar sobre los botones del menú principal.|
-| 5.0.3    | Visualiza Pdfs. Nueva diseño del PDF "Plan de Vuelo Operacional".|
-| 5.0.2    | Envía los archivos pdfs generados (Plan de vuelo operacional) por email.|
+| 5.0.09    | Rediseño de Formulario v1|
+| 5.0.08    | Reposicionado de Pdf en Página y botón de cierre de vista|
+| 5.0.07    | Texto del código comentado y formteado. Reorganización de Recursos del proyecto en carpetas|
+| 5.0.06    | Franja sobre botones en Formulario|
+| 5.0.05    | Añadimos fondo HD a formularios.|
+| 5.0.04    | Se añaden Fx de Sonido al pulsar sobre los botones del menú principal.|
+| 5.0.03    | Visualiza Pdfs. Nueva diseño del PDF "Plan de Vuelo Operacional".|
+| 5.0.02    | Envía los archivos pdfs generados (Plan de vuelo operacional) por email.|

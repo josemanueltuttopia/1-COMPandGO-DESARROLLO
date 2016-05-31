@@ -28,6 +28,11 @@
 		D8810D891CF22C24006C9A4D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8810D881CF22C24006C9A4D /* MessageUI.framework */; };
 		D8B69AE21CFCD393009ACCAD /* DataPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE11CFCD393009ACCAD /* DataPicker.png */; };
 		D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE31CFCDFF3009ACCAD /* click.m4a */; };
+		D8B69AE61CFDEDE2009ACCAD /* pdfsonido.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE51CFDEDA5009ACCAD /* pdfsonido.m4a */; };
+		D8B69AE81CFDEFAA009ACCAD /* calendarSP.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE71CFDEFAA009ACCAD /* calendarSP.png */; };
+		D8B69AEA1CFDFBC6009ACCAD /* iconoCreaPdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE91CFDFBC6009ACCAD /* iconoCreaPdf.png */; };
+		D8B69AEC1CFDFD27009ACCAD /* iconoCreaPdf2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AEB1CFDFD27009ACCAD /* iconoCreaPdf2.png */; };
+		D8B69AEE1CFE034B009ACCAD /* Camara.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AED1CFE034A009ACCAD /* Camara.png */; };
 		D8C4D8171CF1CBA4006188EF /* Panton-BlackCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8095F5C1CF1C3C6001774CA /* Panton-BlackCaps.otf */; };
 		D8C4D8191CF1CD86006188EF /* Kelson Sans Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C4D8181CF1CD75006188EF /* Kelson Sans Regular.otf */; };
 		D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C4D81A1CF1D3AD006188EF /* FranjaNegra.png */; };
@@ -102,6 +107,11 @@
 		D8810D881CF22C24006C9A4D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D8B69AE11CFCD393009ACCAD /* DataPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DataPicker.png; sourceTree = "<group>"; };
 		D8B69AE31CFCDFF3009ACCAD /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		D8B69AE51CFDEDA5009ACCAD /* pdfsonido.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pdfsonido.m4a; sourceTree = "<group>"; };
+		D8B69AE71CFDEFAA009ACCAD /* calendarSP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarSP.png; sourceTree = "<group>"; };
+		D8B69AE91CFDFBC6009ACCAD /* iconoCreaPdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconoCreaPdf.png; sourceTree = "<group>"; };
+		D8B69AEB1CFDFD27009ACCAD /* iconoCreaPdf2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconoCreaPdf2.png; sourceTree = "<group>"; };
+		D8B69AED1CFE034A009ACCAD /* Camara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camara.png; sourceTree = "<group>"; };
 		D8C4D8181CF1CD75006188EF /* Kelson Sans Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kelson Sans Regular.otf"; sourceTree = "<group>"; };
 		D8C4D81A1CF1D3AD006188EF /* FranjaNegra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FranjaNegra.png; sourceTree = "<group>"; };
 		D8C4D81C1CF1E195006188EF /* SigueIcono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SigueIcono.png; sourceTree = "<group>"; };
@@ -298,6 +308,11 @@
 		D8F06DF71CEE2E2300858A6A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D8B69AED1CFE034A009ACCAD /* Camara.png */,
+				D8B69AEB1CFDFD27009ACCAD /* iconoCreaPdf2.png */,
+				D8B69AE91CFDFBC6009ACCAD /* iconoCreaPdf.png */,
+				D8B69AE71CFDEFAA009ACCAD /* calendarSP.png */,
+				D8B69AE51CFDEDA5009ACCAD /* pdfsonido.m4a */,
 				D8B69AE31CFCDFF3009ACCAD /* click.m4a */,
 				D8B69AE11CFCD393009ACCAD /* DataPicker.png */,
 				D847C73D1CFCA0EB004926F4 /* gris.png */,
@@ -442,6 +457,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B69AEA1CFDFBC6009ACCAD /* iconoCreaPdf.png in Resources */,
+				D8B69AE61CFDEDE2009ACCAD /* pdfsonido.m4a in Resources */,
 				D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */,
 				D84640FB1CF9BB9000718744 /* SpecialElite.ttf in Resources */,
 				D8810D811CF213FA006C9A4D /* Pdf.png in Resources */,
@@ -455,16 +472,19 @@
 				D8C4D81F1CF1E249006188EF /* IconoSigue.png in Resources */,
 				D84641031CF9DB9900718744 /* peligro.png in Resources */,
 				D8C4D8191CF1CD86006188EF /* Kelson Sans Regular.otf in Resources */,
+				D8B69AEC1CFDFD27009ACCAD /* iconoCreaPdf2.png in Resources */,
 				D847C73E1CFCA0EB004926F4 /* gris.png in Resources */,
 				D8C4D8171CF1CBA4006188EF /* Panton-BlackCaps.otf in Resources */,
 				D8F06DB61CEE0D0A00858A6A /* LaunchScreen.storyboard in Resources */,
 				D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */,
 				D8D46C261CF8A01700A846C5 /* PulsaSonido.m4a in Resources */,
 				D8F06E231CF0A79000858A6A /* PV.png in Resources */,
+				D8B69AEE1CFE034B009ACCAD /* Camara.png in Resources */,
 				D84641091CF9E4CC00718744 /* peligroAeronave.png in Resources */,
 				D84640FF1CF9CF0F00718744 /* blanco.png in Resources */,
 				D8F06DB31CEE0D0A00858A6A /* Assets.xcassets in Resources */,
 				D8C4D81D1CF1E195006188EF /* SigueIcono.png in Resources */,
+				D8B69AE81CFDEFAA009ACCAD /* calendarSP.png in Resources */,
 				D8F06E191CEFA13F00858A6A /* BotonDocuemntosGrande.png in Resources */,
 				D8F06E181CEFA13F00858A6A /* BotobGaleriaGrande.png in Resources */,
 				D8F06E051CEF93A100858A6A /* Kelson Sans Light.otf in Resources */,

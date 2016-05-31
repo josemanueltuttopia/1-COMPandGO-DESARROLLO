@@ -20,8 +20,9 @@
 
 @interface FormularioViewController : UIViewController <MFMailComposeViewControllerDelegate>
 {
-
+    SystemSoundID BotonTipo1;
     SystemSoundID BotonTipo2;
+    SystemSoundID BotonTipo3;
 
 
   
@@ -105,6 +106,8 @@
 - (IBAction)IntroduceFechaBoton:(id)sender;//----------MUESTRA TFECHA
 
 - (IBAction)SuenaClick:(id)sender;
+- (IBAction)SuenaBoton:(id)sender;
+- (IBAction)Suenapdf:(id)sender;
 
 @end
 

@@ -74,11 +74,18 @@
     [dateFormat setDateFormat:@"dd/MMM/YYY"];
     FechaActual.text= [dateFormat stringFromDate:FechaHoy];
     
-    //Definición de Sonido de Boton
-    NSURL *Boton2Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"click" ofType:@"m4a"] ];
+    //Definición de Sonido de Boton1
+    NSURL *Boton1Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"click" ofType:@"m4a"] ];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton1Audio, & BotonTipo1);
+    
+    //Definición de Sonido de Boton2
+    NSURL *Boton2Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"PulsaSonido" ofType:@"m4a"] ];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton2Audio, & BotonTipo2);
 
-    
+    //Definición de Sonido de Boton3
+    NSURL *Boton3Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pdfsonido" ofType:@"m4a"] ];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton3Audio, & BotonTipo3);
+
 
  
    }
@@ -576,11 +583,14 @@
     [CierraFechaBoton setHidden:NO];}
 
 - (IBAction)SuenaClick:(id)sender
-{
+{AudioServicesPlaySystemSound(BotonTipo2);}
+- (IBAction)SuenaBoton:(id)sender
+{AudioServicesPlaySystemSound(BotonTipo1);}
 
-    AudioServicesPlaySystemSound(BotonTipo2);
+- (IBAction)Suenapdf:(id)sender
+{AudioServicesPlaySystemSound(BotonTipo3);}
 
-}
+
 
 @end
 

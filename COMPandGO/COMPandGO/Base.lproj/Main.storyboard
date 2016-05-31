@@ -67,8 +67,16 @@
             <string>KelsonSans-Light</string>
             <string>KelsonSans-Light</string>
             <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
         </mutableArray>
         <mutableArray key="Kelson Sans Regular.otf">
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
+            <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
@@ -149,27 +157,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bt7-Ay-OOi">
-                                <rect key="frame" x="212" y="698" width="303" height="92"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERIA 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77R-KU-9Gm">
+                                <rect key="frame" x="144" y="402" width="481" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="SIGUIENTE"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fr7-0T-oH3">
+                                <rect key="frame" x="20" y="20" width="94" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="IconoVuleve.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="sHL-mW-Mcq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bt7-Ay-OOi">
+                                <rect key="frame" x="546" y="20" width="181" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <state key="normal" title="Siguiente" image="IconoSigue.png"/>
                                 <connections>
                                     <segue destination="jhc-OU-2ul" kind="modal" modalTransitionStyle="crossDissolve" id="KTH-5F-1ik"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERIA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="77R-KU-9Gm">
-                                <rect key="frame" x="293" y="160" width="81" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fr7-0T-oH3">
-                                <rect key="frame" x="214" y="798" width="298" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="VOLVER"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRU-KC-cNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478.72000000000003" y="-1525.76"/>
+            <point key="canvasLocation" x="362" y="-1112"/>
         </scene>
         <!--GaleriaPreview-->
         <scene sceneID="t9J-Lt-f2A">
@@ -192,20 +202,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ih-de-sJJ">
-                                <rect key="frame" x="226" y="732" width="317" height="187"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3Ih-de-sJJ">
+                                <rect key="frame" x="20" y="20" width="166" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <state key="normal" title="Volver"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <state key="normal" title="Volver" image="IconoVuleve.png"/>
                                 <connections>
                                     <segue destination="9tz-Hi-iEn" kind="modal" modalTransitionStyle="crossDissolve" id="dph-5b-tDA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERÍA 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ave-c5-RVr">
-                                <rect key="frame" x="221" y="370" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERIA 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ps7-oS-HvB">
+                                <rect key="frame" x="144" y="402" width="481" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -215,7 +225,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTf-VC-n5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690.8800000000001" y="-1539.4133333333334"/>
+            <point key="canvasLocation" x="1196" y="-1124"/>
+        </scene>
+        <!--Grabación-->
+        <scene sceneID="hwa-Sk-oyZ">
+            <objects>
+                <viewController title="Grabación" id="IWE-yM-FqJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3al-0t-hCV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLargo.jpg" id="io8-5r-xfA">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LYp-dw-bcY">
+                                <rect key="frame" x="20" y="45" width="144" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="IconoVuleve.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="lSM-ya-Wxk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94q-K2-uX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1606" y="379"/>
         </scene>
         <!--Principal-->
         <scene sceneID="tne-QT-ifu">
@@ -234,75 +272,50 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="B0W-b5-dlb">
-                                <rect key="frame" x="0.0" y="429" width="1033" height="95"/>
+                                <rect key="frame" x="0.0" y="627" width="1033" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="7uv-KU-M2Q">
-                                <rect key="frame" x="-9" y="622" width="1042" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="ieA-H2-siy">
-                                <rect key="frame" x="0.0" y="814" width="1033" height="95"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="aja-OT-6ZS">
+                                <rect key="frame" x="-4" y="445" width="1033" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Definir Etapas de tu Misión." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZB6-sW-1eh">
-                                <rect key="frame" x="279" y="435" width="286" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Previsualiza tus grabaciones" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sD1-YQ-bUD">
-                                <rect key="frame" x="279" y="627" width="286" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Copia, borra y organiza tus videos." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OdS-Bc-C2L">
-                                <rect key="frame" x="279" y="656" width="393" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Descargalos a tu iPad." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kUa-Pt-bEh">
-                                <rect key="frame" x="279" y="685" width="393" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Genera Documentación. " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rDk-4U-u2q">
-                                <rect key="frame" x="276" y="821" width="286" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Genera archivos Pdf de tus informes." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1cb-EY-LiR">
-                                <rect key="frame" x="276" y="850" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Envíalos por email." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p8y-hO-Mrp">
-                                <rect key="frame" x="276" y="878" width="374" height="31"/>
+                                <rect key="frame" x="279" y="633" width="286" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Configura las etapas de tu Misión." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sCh-bm-bWD">
-                                <rect key="frame" x="279" y="460" width="339" height="35"/>
+                                <rect key="frame" x="279" y="659" width="339" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Pilota en Modo Manual." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eHb-fg-d2s">
+                                <rect key="frame" x="276" y="452" width="339" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Graba videos en Alta Resolución (4k)" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Si2-ST-Ia3">
+                                <rect key="frame" x="276" y="480" width="362" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Camptura Fotografías en Raw." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ADh-Rh-XXL">
+                                <rect key="frame" x="276" y="510" width="362" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Ejecuta la Misión" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lmp-m2-TUA">
-                                <rect key="frame" x="279" y="484" width="339" height="43"/>
+                                <rect key="frame" x="279" y="690" width="339" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -315,24 +328,8 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B9x-up-Jn5"/>
                                     <segue destination="QMh-IJ-soS" kind="modal" modalTransitionStyle="crossDissolve" id="Pz1-na-Jtz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hEk-ii-ObO">
-                                <rect key="frame" x="66" y="754" width="187" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="BotonDocuemntosGrande.png"/>
-                                <connections>
-                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Le0-7m-o1Q"/>
-                                    <segue destination="sO6-kc-0fl" kind="modal" modalTransitionStyle="crossDissolve" id="wB1-9V-iIE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gBJ-z4-L2D">
-                                <rect key="frame" x="67" y="560" width="184" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="BotobGaleriaGrande.png"/>
-                                <connections>
-                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKc-h7-6Q5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AYUDA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mLg-cb-ba0">
@@ -342,29 +339,22 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERÍA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ql-gy-yEf">
-                                <rect key="frame" x="253" y="513" width="256" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISIÓN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gXh-n2-5g1">
-                                <rect key="frame" x="253" y="241" width="225" height="332"/>
+                                <rect key="frame" x="252" y="576" width="127" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCUMENTACIÓN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7rO-eN-Hoa">
-                                <rect key="frame" x="252" y="749" width="310" height="88"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRABACIÓN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5wk-Aq-5Fg">
+                                <rect key="frame" x="252" y="395" width="234" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RNp-9M-S4j">
-                                <rect key="frame" x="68" y="368" width="183" height="176"/>
+                                <rect key="frame" x="67" y="566" width="176" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BotonCreaRutaGrande.png"/>
                                 <connections>
@@ -372,6 +362,97 @@
                                     <segue destination="9Vm-VZ-pfz" kind="modal" modalTransitionStyle="crossDissolve" id="Mif-da-VnN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QPp-XX-EwX">
+                                <rect key="frame" x="67" y="382" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Camara.png"/>
+                                <connections>
+                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eG4-VP-dGD"/>
+                                    <segue destination="IWE-yM-FqJ" kind="modal" modalTransitionStyle="crossDissolve" id="RXa-nf-gci"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="ieA-H2-siy">
+                                <rect key="frame" x="0.0" y="264" width="1033" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Genera Documentación. " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rDk-4U-u2q">
+                                <rect key="frame" x="276" y="271" width="286" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Genera archivos Pdf de tus informes." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1cb-EY-LiR">
+                                <rect key="frame" x="276" y="300" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Envíalos por email." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p8y-hO-Mrp">
+                                <rect key="frame" x="276" y="328" width="374" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hEk-ii-ObO">
+                                <rect key="frame" x="67" y="207" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="BotonDocuemntosGrande.png"/>
+                                <connections>
+                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Le0-7m-o1Q"/>
+                                    <segue destination="sO6-kc-0fl" kind="modal" modalTransitionStyle="crossDissolve" id="wB1-9V-iIE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOCUMENTACIÓN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7rO-eN-Hoa">
+                                <rect key="frame" x="252" y="199" width="310" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="7uv-KU-M2Q">
+                                <rect key="frame" x="-9" y="806" width="1042" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Previsualiza tus grabaciones" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sD1-YQ-bUD">
+                                <rect key="frame" x="279" y="811" width="286" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Copia, borra y organiza tus videos." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OdS-Bc-C2L">
+                                <rect key="frame" x="279" y="840" width="393" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· Descargalos a tu iPad." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kUa-Pt-bEh">
+                                <rect key="frame" x="279" y="869" width="393" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gBJ-z4-L2D">
+                                <rect key="frame" x="67" y="744" width="176" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BotobGaleriaGrande.png"/>
+                                <connections>
+                                    <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKc-h7-6Q5"/>
+                                    <segue destination="9tz-Hi-iEn" kind="modal" modalTransitionStyle="crossDissolve" id="yl3-BV-wUb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GALERÍA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ql-gy-yEf">
+                                <rect key="frame" x="252" y="690" width="256" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -807,6 +888,9 @@
                                                     <segment title="EVLOS"/>
                                                     <segment title="BVLOS"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="SuenaBoton:" destination="sO6-kc-0fl" eventType="valueChanged" id="gut-nR-wvQ"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción y objetivo de la operación:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oej-MD-hIP">
                                                 <rect key="frame" x="50" y="1790" width="361" height="38"/>
@@ -1194,6 +1278,14 @@
                                                     <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="32L-G5-bU5"/>
                                                 </connections>
                                             </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="INf-dT-TJD">
+                                                <rect key="frame" x="66" y="1523" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="kar-C8-wJt"/>
+                                                </connections>
+                                            </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="7GW-6L-NYg">
                                                 <rect key="frame" x="66" y="1577" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1313,6 +1405,9 @@
                                                     <segment title="VMC"/>
                                                     <segment title="IMC"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="cz1-lV-cPE"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condiciones Meteorológicas:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5T-3Q-xvr">
                                                 <rect key="frame" x="239" y="2339" width="389" height="29"/>
@@ -1326,20 +1421,13 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bsy-3i-v8h">
-                                                <rect key="frame" x="341" y="2826" width="121" height="124"/>
+                                                <rect key="frame" x="341" y="2826" width="125" height="125"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Pdf.png"/>
+                                                <state key="normal" image="iconoCreaPdf2.png"/>
                                                 <connections>
                                                     <action selector="GenerarPdfBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="S3k-Sf-Jhk"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREA PDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="toD-0Z-JZR">
-                                                <rect key="frame" x="368" y="2948" width="66" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="18"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPRUEBA PDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hzp-Qs-4G4">
                                                 <rect key="frame" x="469" y="2948" width="114" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1352,13 +1440,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQn-Z3-G6w">
-                                                <rect key="frame" x="587" y="2827" width="129" height="125"/>
+                                                <rect key="frame" x="589" y="2826" width="125" height="125"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-31"/>
                                                 <state key="normal" image="IconoEmail.png"/>
                                                 <connections>
                                                     <action selector="EnviarEmail:" destination="sO6-kc-0fl" eventType="touchUpInside" id="GKQ-M9-f0l"/>
+                                                    <action selector="SuenaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="RIP-RB-nJB"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENVÍA EMAIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDO-7d-C1Y">
@@ -1369,25 +1458,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kvt-ev-lAb">
-                                                <rect key="frame" x="460" y="2829" width="132" height="122"/>
+                                                <rect key="frame" x="464" y="2826" width="125" height="125"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="IconoVerPfd.png"/>
                                                 <connections>
                                                     <action selector="MuestraFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="Kd9-wN-79U"/>
-                                                </connections>
-                                            </button>
-                                            <webView opaque="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" id="KtY-YQ-nQa">
-                                                <rect key="frame" x="48" y="2000" width="689" height="0.0"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <dataDetectorType key="dataDetectorTypes"/>
-                                            </webView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YYu-3m-kCE">
-                                                <rect key="frame" x="42" y="2062" width="66" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="BotonCierra.png"/>
-                                                <connections>
-                                                    <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
+                                                    <action selector="SuenaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="9yU-2H-OuO"/>
                                                 </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="45r-GP-POD">
@@ -1404,6 +1480,7 @@
                                                 <state key="normal" image="BotonCierra.png"/>
                                                 <connections>
                                                     <action selector="CierraFechaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="JPN-w7-Ch4"/>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="touchUpInside" id="PVi-Qz-V5m"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LUL-ng-ksu">
@@ -1414,22 +1491,37 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kIm-U4-SVU">
-                                                <rect key="frame" x="643" y="2705" width="82" height="34"/>
+                                                <rect key="frame" x="668" y="2703" width="60" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="22"/>
-                                                <state key="normal" title="(Cambiar)"/>
+                                                <state key="normal" title="(Cambiar)" image="calendarSP.png"/>
                                                 <connections>
                                                     <action selector="IntroduceFechaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="dCi-xQ-CEE"/>
+                                                    <action selector="SuenaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="TmU-AE-DCp"/>
                                                 </connections>
                                             </button>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="INf-dT-TJD">
-                                                <rect key="frame" x="66" y="1523" width="51" height="31"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YYu-3m-kCE">
+                                                <rect key="frame" x="42" y="2062" width="66" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="BotonCierra.png"/>
                                                 <connections>
-                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="kar-C8-wJt"/>
+                                                    <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="touchUpInside" id="DfS-NP-uvV"/>
                                                 </connections>
-                                            </switch>
+                                            </button>
+                                            <webView opaque="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" id="KtY-YQ-nQa">
+                                                <rect key="frame" x="48" y="0.0" width="689" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <dataDetectorType key="dataDetectorTypes"/>
+                                            </webView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREA PDF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="toD-0Z-JZR">
+                                                <rect key="frame" x="374" y="2948" width="66" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="18"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1496,7 +1588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2s-bN-4D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="945"/>
+            <point key="canvasLocation" x="1978" y="997"/>
         </scene>
     </scenes>
     <resources>
@@ -1505,17 +1597,20 @@
         <image name="BotonCierra.png" width="42" height="42"/>
         <image name="BotonCreaRutaGrande.png" width="256" height="256"/>
         <image name="BotonDocuemntosGrande.png" width="256" height="256"/>
+        <image name="Camara.png" width="256" height="256"/>
         <image name="DataPicker.png" width="338" height="241"/>
         <image name="FondoLargo.jpg" width="2133" height="9956"/>
         <image name="FranjaNegra.png" width="1080" height="184"/>
         <image name="IconoAyuda.png" width="95" height="92"/>
-        <image name="IconoEmail.png" width="120" height="120"/>
-        <image name="IconoVerPfd.png" width="120" height="120"/>
+        <image name="IconoEmail.png" width="256" height="256"/>
+        <image name="IconoSigue.png" width="90" height="90"/>
+        <image name="IconoVerPfd.png" width="256" height="256"/>
         <image name="IconoVuleve.png" width="90" height="90"/>
-        <image name="Pdf.png" width="120" height="120"/>
         <image name="blanco.png" width="635" height="79"/>
+        <image name="calendarSP.png" width="256" height="256"/>
         <image name="fondo.jpg" width="1536" height="2048"/>
         <image name="fondo2.jpg" width="1920" height="1080"/>
+        <image name="iconoCreaPdf2.png" width="256" height="256"/>
         <image name="logofondo.png" width="807" height="849"/>
         <image name="peligro.png" width="312" height="32"/>
         <image name="peligroAeronave.png" width="376" height="32"/>
@@ -1526,7 +1621,8 @@
         <image name="peligroTipoOperacion.png" width="624" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6ce-Vc-BkV"/>
+        <segue reference="dph-5b-tDA"/>
+        <segue reference="sHL-mW-Mcq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
