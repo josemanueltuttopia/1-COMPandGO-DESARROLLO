@@ -41,7 +41,10 @@
     [BotonCerrarFlotante setHidden:YES];
     [FlotanteSelectorFecha setHidden:YES];
     [_SelectorDatePicker setHidden:YES];
-     [CierraFechaBoton setHidden:YES];
+    [CierraFechaBoton setHidden:YES];
+    
+    self.SelectorDatePicker.datePickerMode = UIDatePickerModeDate;
+    [self.SelectorDatePicker setValue:[UIColor colorWithRed:226/255.0f green:204/255.0f blue:36/255.0f alpha:1.0f] forKey:@"textColor"];
  
     
     //Alineaciónes verticales de contenidos de TexFields de los formularios
@@ -60,14 +63,24 @@
     LocalidadCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     ProvinciaCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     MunicipioCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-       LocalidadCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    LocalidadCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     AltitudMaximaCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     AlcanceVisualMaximoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     
     
+    //Definición de Fecha Actual (incluido su formato)
+    NSDate *FechaHoy = [NSDate date];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd/MMM/YYY"];
+    FechaActual.text= [dateFormat stringFromDate:FechaHoy];
     
+    //Definición de Sonido de Boton
+    NSURL *Boton2Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"click" ofType:@"m4a"] ];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton2Audio, & BotonTipo2);
+
     
-    
+
+ 
    }
 
 //AVISOS DE PROBLEMAS DE MEMORIA--------------------------------------------------------//
@@ -92,20 +105,11 @@
 {
     switch (result)
     {
-        case MFMailComposeResultCancelled:
-            NSLog(@"Mail cancelled");
-            break;
-        case MFMailComposeResultSaved:
-            NSLog(@"Mail saved");
-            break;
-        case MFMailComposeResultSent:
-            NSLog(@"Mail sent");
-            break;
-        case MFMailComposeResultFailed:
-            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
-            break;
-        default:
-            break;
+        case MFMailComposeResultCancelled:NSLog(@"Mail cancelled");break;
+        case MFMailComposeResultSaved:NSLog(@"Mail saved");break;
+        case MFMailComposeResultSent:NSLog(@"Mail sent");break;
+        case MFMailComposeResultFailed:NSLog(@"Mail sent failure: %@", [error localizedDescription]);break;
+        default:break;
     }
     
     // Cierra el Interface de Email
@@ -147,234 +151,189 @@
 
 -(void)dibujaTexto
 {
-    CGContextRef contexto = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(contexto, [UIColor blackColor].CGColor);
-    UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:46.f];
-    NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
-    
-    UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f];
-    NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha};
-    
-    
-    UIFont *tipografiapunto = [UIFont fontWithName:@"AmericanTypewriter" size:200.f];
-    NSDictionary *misAtributospunto = @{ NSFontAttributeName:tipografiapunto};
-    
-    UIFont *tipografiapuntogordo = [UIFont fontWithName:@"AmericanTypewriter" size:400.f];
-    NSDictionary * misAtributospuntogordo = @{ NSFontAttributeName:tipografiapuntogordo};
-    
-    
-    
-
-    
-
-    
-    
+    //DEFINICIÓN DE CONTEXTO
+            CGContextRef contexto = UIGraphicsGetCurrentContext();
+            CGContextSetFillColorWithColor(contexto, [UIColor blackColor].CGColor);
+    //DEFINICIÓN DE TIPOGRAFÍA BASE DEL PDF GENERADO
+            UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:46.f];
+            NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
+    //DEFINICIÓN DE TIPOGRAFÍA DE LA FECHA DEL PDF GENERADO
+            UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f];
+            NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha};
+    //DEFINICIÓN DE TIPOGRAFÍA DE LOS PUNTOS DE LOS CHECKS (PEQUEÑOS)
+            UIFont *tipografiapunto = [UIFont fontWithName:@"AmericanTypewriter" size:200.f];
+            NSDictionary *misAtributospunto = @{ NSFontAttributeName:tipografiapunto};
+    //DEFINICIÓN DE TIPOGRAFÍA DE LOS PUNTOS DE LOS CHECKS (GRANDES)
+            UIFont *tipografiapuntogordo = [UIFont fontWithName:@"AmericanTypewriter" size:400.f];
+            NSDictionary * misAtributospuntogordo = @{ NSFontAttributeName:tipografiapuntogordo};
     
     //INFORMACION DEL PILOTO-----------------------------------------------------------//
     
         //NombreCompletoPiloto
-        CGRect areaTextoNombreCompletoPiloto = CGRectMake(750, 350, 2480, 3508);
+            CGRect areaTextoNombreCompletoPiloto = CGRectMake(750, 350, 2480, 3508);
         //NSString *NombreCompletoPilotoPdf = NombreCompletoPilotoCampo.text;
-        NSString *NombreCompletoPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *NombreCompletoPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
         //DniCifNifPiloto
-        CGRect areaTextoDniCifNifPilotoCampo = CGRectMake(581, 416, 2480, 3508);
-        NSString *DniCifNifPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            CGRect areaTextoDniCifNifPilotoCampo = CGRectMake(581, 416, 2480, 3508);
+            NSString *DniCifNifPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
         //TlfPilotoCampo
-        CGRect areaTlfPilotoCampo = CGRectMake(1706, 416, 2480, 3508);
-        NSString *TlfPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            CGRect areaTlfPilotoCampo = CGRectMake(1706, 416, 2480, 3508);
+            NSString *TlfPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
         //MailPilotoCampo
-        CGRect areaMailPilotoCampo = CGRectMake(364, 481, 2480, 3508);
-        NSString *MailPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            CGRect areaMailPilotoCampo = CGRectMake(364, 481, 2480, 3508);
+            NSString *MailPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
 
-    
     //INFORMACION DEL OPERADOR--------------------------------------------------------//
     
         //NombreCompletoOperador
-        CGRect areaNombreCompletoOperadorCampo = CGRectMake(758, 677, 2480, 3508);
-        NSString *NombreCompletoOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
-
+            CGRect areaNombreCompletoOperadorCampo = CGRectMake(758, 677, 2480, 3508);
+            NSString *NombreCompletoOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
         //DniCifNifOperador
-        CGRect areaDniCifNifOperadorCampo = CGRectMake(585, 745, 2480, 3508);
-        NSString *DniCifNifOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
-
+            CGRect areaDniCifNifOperadorCampo = CGRectMake(585, 745, 2480, 3508);
+            NSString *DniCifNifOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
         //TlfPilotoOeprador
-        CGRect areaTlfOperadorCampo = CGRectMake(1680, 745, 2480, 3508);
-        NSString *TlfOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
+            CGRect areaTlfOperadorCampo = CGRectMake(1680, 745, 2480, 3508);
+            NSString *TlfOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
         //MailOperadorCampo
-        CGRect areaMailOperadorCampo = CGRectMake(362, 810, 2480, 3508);
-        NSString *MailOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv121341234";
+            CGRect areaMailOperadorCampo = CGRectMake(362, 810, 2480, 3508);
+            NSString *MailOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv121341234";
     
     //INFORMACION DE LA AERONAVE------------------------------------------------------//
     
         //CLASE
-        CGRect areaClaseCampo = CGRectMake(400, 1006, 2478, 3508);
-        NSString *ClasePdf =  @"AASSDggggkkjdfsfgaò";
-    
+            CGRect areaClaseCampo = CGRectMake(400, 1006, 2478, 3508);
+            NSString *ClasePdf =  @"AASSDggggkkjdfsfgaò";
         //MarcaCampo
-        CGRect areaMarcaCampo = CGRectMake(1756, 1006, 2478, 3508);
-        NSString *MarcaPdf =  @"AASSDggggkkjdfsfgaò";
-    
+            CGRect areaMarcaCampo = CGRectMake(1756, 1006, 2478, 3508);
+            NSString *MarcaPdf =  @"AASSDggggkkjdfsfgaò";
         //NumSerieCampo
-        CGRect areaNumSerieCampo = CGRectMake(1833, 1073, 2480, 3508);
-        NSString *NumSeriePdf =  @"AASSDggggkkjdfsf";
-    
+            CGRect areaNumSerieCampo = CGRectMake(1833, 1073, 2480, 3508);
+            NSString *NumSeriePdf =  @"AASSDggggkkjdfsf";
         //ModeloCampo
-        CGRect areaModeloCampo = CGRectMake(446, 1073, 2480, 3508);
-        NSString *ModeloPdf =  @"AASSDggggkkjdfsfgaòrwv";
-
-    
-    
+            CGRect areaModeloCampo = CGRectMake(446, 1073, 2480, 3508);
+            NSString *ModeloPdf =  @"AASSDggggkkjdfsfgaòrwv";
     
     //TIPO DE VUELO-------------------------------------------------------------------//
     
         //Operacion Normal
-        CGRect areaActividadesDeInvestigacionCampo = CGRectMake(205, 1247, 2480, 3508);
-        NSString *ActividadesDeInvestigacionPdf =   @"·";
-        CGRect areaTratamientosCampo = CGRectMake(205, 1293, 2480, 3508);
-        NSString *TratamientosPdf =   @"·";
-        CGRect areaFotografiaCampo = CGRectMake(205, 1339, 2480, 3508);
-        NSString *FotografiaPdf =   @"·";
-        CGRect areaInvestigacionCampo = CGRectMake(205, 1385, 2480, 3508);
-        NSString *InvestigacionPdf =   @"·";
-        CGRect areaObservacionCampo = CGRectMake(205, 1431, 2480, 3508);
-        NSString *ObservacionPdf =   @"·";
-        CGRect areaPublicidadCampo = CGRectMake(205, 1477, 2480, 3508);
-        NSString *PublicidadPdf =   @"·";
-        CGRect areaOperacionesCampo = CGRectMake(205, 1526, 2480, 3508);
-        NSString *OperacionesPdf =   @"·";
-        CGRect areaOtrosCampo = CGRectMake(205, 1572, 2480, 3508);
-        NSString *OtrosPdf =   @"·";
+            CGRect areaActividadesDeInvestigacionCampo = CGRectMake(205, 1247, 2480, 3508);
+            NSString *ActividadesDeInvestigacionPdf =   @"·";
+            CGRect areaTratamientosCampo = CGRectMake(205, 1293, 2480, 3508);
+            NSString *TratamientosPdf =   @"·";
+            CGRect areaFotografiaCampo = CGRectMake(205, 1339, 2480, 3508);
+            NSString *FotografiaPdf =   @"·";
+            CGRect areaInvestigacionCampo = CGRectMake(205, 1385, 2480, 3508);
+            NSString *InvestigacionPdf =   @"·";
+            CGRect areaObservacionCampo = CGRectMake(205, 1431, 2480, 3508);
+            NSString *ObservacionPdf =   @"·";
+            CGRect areaPublicidadCampo = CGRectMake(205, 1477, 2480, 3508);
+            NSString *PublicidadPdf =   @"·";
+            CGRect areaOperacionesCampo = CGRectMake(205, 1526, 2480, 3508);
+            NSString *OperacionesPdf =   @"·";
+            CGRect areaOtrosCampo = CGRectMake(205, 1572, 2480, 3508);
+            NSString *OtrosPdf =   @"·";
         //Operacion Especial
-        CGRect areaVueloPrueba = CGRectMake(205, 1699, 2480, 3508);
-        NSString *VueloPruebaPdf =   @"·";
-        CGRect areaVueloProgramas = CGRectMake(205, 1747, 2480, 3508);
-        NSString *VueloProgramasPdf =   @"·";
-        CGRect areaVueloDemostracion = CGRectMake(205, 1795, 2480, 3508);
-        NSString *VueloDemostracioPdf =   @"·";
-        CGRect areaVueloDesarrollo = CGRectMake(205, 1843, 2480, 3508);
-        NSString *VueloDesarrolloPdf =   @"·";
-        CGRect areaVueloID = CGRectMake(205, 1889, 2480, 3508);
-        NSString *VueloIDPdf =   @"·";
-        CGRect areaVueloPruebaNecesarios = CGRectMake(205, 1937, 2480, 3508);
-        NSString *VueloPruebaNecesariosPdf =   @"·";
-        CGRect areaNoSujeto = CGRectMake(205, 1982, 2480, 3508);
-        NSString *NoSujetoPdf =   @"·";
-    
-    
-
-
-
+            CGRect areaVueloPrueba = CGRectMake(205, 1699, 2480, 3508);
+            NSString *VueloPruebaPdf =   @"·";
+            CGRect areaVueloProgramas = CGRectMake(205, 1747, 2480, 3508);
+            NSString *VueloProgramasPdf =   @"·";
+            CGRect areaVueloDemostracion = CGRectMake(205, 1795, 2480, 3508);
+            NSString *VueloDemostracioPdf =   @"·";
+            CGRect areaVueloDesarrollo = CGRectMake(205, 1843, 2480, 3508);
+            NSString *VueloDesarrolloPdf =   @"·";
+            CGRect areaVueloID = CGRectMake(205, 1889, 2480, 3508);
+            NSString *VueloIDPdf =   @"·";
+            CGRect areaVueloPruebaNecesarios = CGRectMake(205, 1937, 2480, 3508);
+            NSString *VueloPruebaNecesariosPdf =   @"·";
+            CGRect areaNoSujeto = CGRectMake(205, 1982, 2480, 3508);
+            NSString *NoSujetoPdf =   @"·";
     
     //INFORMACION DE LA AERONAVE------------------------------------------------------//
     
     
     //TIPO DE OPERACION Y DESCRIPCIÓN Y LOCALIZACION----------------------------------//
-    
-     
 
         //TIPO DE VUELO
-        CGRect areaVLO = CGRectMake(1582, 2052, 2480, 3508);
-        NSString *VLOPdf =   @"·";
-        CGRect areaEVLO = CGRectMake(1813, 2052, 2480, 3508);
-        NSString *EVLOPdf =   @"·";
-        CGRect areaBVLOS = CGRectMake(2089, 2052, 2480, 3508);
-        NSString *EVLOSPdf =   @"·";
-
-    
-    
+            CGRect areaVLO = CGRectMake(1582, 2052, 2480, 3508);
+            NSString *VLOPdf =   @"·";
+            CGRect areaEVLO = CGRectMake(1813, 2052, 2480, 3508);
+            NSString *EVLOPdf =   @"·";
+            CGRect areaBVLOS = CGRectMake(2089, 2052, 2480, 3508);
+            NSString *EVLOSPdf =   @"·";
         //DescripcionObjetivoCampo
-        CGRect areaDescripcionObjetivoCampo = CGRectMake(601, 2316, 2480, 3508);
-        NSString *DescripcionObjetivoPdf =   @"AASSDggggkkjdfsfgaò";
-
+            CGRect areaDescripcionObjetivoCampo = CGRectMake(601, 2316, 2480, 3508);
+            NSString *DescripcionObjetivoPdf =   @"AASSDggggkkjdfsfgaò";
         //MunicipioCampo
-        CGRect areaMunicipioCampo = CGRectMake(1332, 2387, 2480, 3508);
-        NSString *MunicipioPdf =   @"AASSDggggkkj";
-
-    
+            CGRect areaMunicipioCampo = CGRectMake(1332, 2387, 2480, 3508);
+            NSString *MunicipioPdf =   @"AASSDggggkkj";
         //LocalidadCampo
-        CGRect areaLocalidadCampo = CGRectMake(535, 2387, 2480, 3508);
-        NSString *LocalidadPdf =   @"AASSDggggkk";
-
- 
+            CGRect areaLocalidadCampo = CGRectMake(535, 2387, 2480, 3508);
+            NSString *LocalidadPdf =   @"AASSDggggkk";
         //ProvinciaCampo
-        CGRect areaProvinciaCampo = CGRectMake(2063, 2387, 2480, 3508);
-        NSString *ProvinciaPdf =   @"AASSDggg";
+            CGRect areaProvinciaCampo = CGRectMake(2063, 2387, 2480, 3508);
+            NSString *ProvinciaPdf =   @"AASSDggg";
 
     
     //RESTRICCIONES DE LA OPERACIÓN--------------------------------------------------//
     
-    
-    CGRect areaRequiereCoordinacion = CGRectMake(205, 2492, 2480, 3508);
-    NSString *RequiereCoordinacionPdf =   @"·";
-    CGRect areaNecesariaPublicacion = CGRectMake(205, 2536, 2480, 3508);
-    NSString *NecesariaPublicacionPdf =   @"·";
-    CGRect areaProhibidoDias = CGRectMake(205, 2578, 2480, 3508);
-    NSString *ProhibidoDiasPdf =   @"·";
-    CGRect areaProhibidoHoras = CGRectMake(205, 2620, 2480, 3508);
-    NSString *ProhibidoHorasPdf =   @"·";
-    
-    
+        //Requiere Coordinación
+            CGRect areaRequiereCoordinacion = CGRectMake(205, 2492, 2480, 3508);
+            NSString *RequiereCoordinacionPdf =   @"·";
+        //Necesaria Publicación
+            CGRect areaNecesariaPublicacion = CGRectMake(205, 2536, 2480, 3508);
+            NSString *NecesariaPublicacionPdf =   @"·";
+        //Días Prohibidos
+            CGRect areaProhibidoDias = CGRectMake(205, 2578, 2480, 3508);
+            NSString *ProhibidoDiasPdf =   @"·";
+        //Horas Prohibidas
+            CGRect areaProhibidoHoras = CGRectMake(205, 2620, 2480, 3508);
+            NSString *ProhibidoHorasPdf =   @"·";
         //DiasProhibidosCampo
-        CGRect areaDiasProhibidosCampo = CGRectMake(1113, 2649, 2480, 3508);
-        NSString *DiasProhibidosPdf =  @"AASSDggg";
-    
+            CGRect areaDiasProhibidosCampo = CGRectMake(1113, 2649, 2480, 3508);
+            NSString *DiasProhibidosPdf =  @"AASSDggg";
         //AlcanceVisualMaximoCampo
-        CGRect areaAlcanceVisualMaximoCampo = CGRectMake(2128, 2649, 2480, 3508);
-        NSString *AlcanceVisualMaximoPdf =  @"AASgSD";
-
-
+            CGRect areaAlcanceVisualMaximoCampo = CGRectMake(2128, 2649, 2480, 3508);
+            NSString *AlcanceVisualMaximoPdf =  @"AASgSD";
         //HorarioProhibidoCampo
-        CGRect areaHorarioProhibidoCampo = CGRectMake(1113, 2706, 2480, 3508);
-        NSString *HorarioProhibidoPdf =  @"AASSDg";
-
+            CGRect areaHorarioProhibidoCampo = CGRectMake(1113, 2706, 2480, 3508);
+            NSString *HorarioProhibidoPdf =  @"AASSDg";
         //AltitudMaximaCampo
-        CGRect areaAltitudMaximaCampo = CGRectMake(1926,2706, 2480, 3508);
-        NSString *AltitudMaximaPdf =  @"ADggg";
-
-
-  
+            CGRect areaAltitudMaximaCampo = CGRectMake(1926,2706, 2480, 3508);
+            NSString *AltitudMaximaPdf =  @"ADggg";
     
     //METEOROLOGÍA-------------------------------------------------------------//
     
-    //Puntos gordos
-    CGRect areaCondicionVMC = CGRectMake(1760, 2718, 2480, 3508);
-    NSString *CondicionVMCPdf =   @"·";
-    CGRect areaCondicionIMC = CGRectMake(2008, 2718, 2480, 3508);
-    NSString *CondicionIMCPdf =   @"·";
+        //Condiciones VMC (PUNTOS GORDOS)
+            CGRect areaCondicionVMC = CGRectMake(1760, 2718, 2480, 3508);
+            NSString *CondicionVMCPdf =   @"·";
+        //Condiciones VMC (PUNTOS GORDOS)
+            CGRect areaCondicionIMC = CGRectMake(2008, 2718, 2480, 3508);
+            NSString *CondicionIMCPdf =   @"·";
+        //Área Perfil (PUNTOS FINOS)
+            CGRect areaPerfil = CGRectMake(205, 2942, 2480, 3508);
+            NSString *PerfilPdf =   @"·";
+        //Área PuntosPerfil (PUNTOS FINOS)
+            CGRect areaPuntosPerfil = CGRectMake(205, 2988, 2480, 3508);
+            NSString *PuntosPerfilPdf =   @"·";
+        //Área PuntosPerfil (PUNTOS FINOS)
+            CGRect areaZonasDespegue = CGRectMake(205, 3031, 2480, 3508);
+            NSString *areaZonasDespeguePdf =   @"·";
     
+            CGRect areaRevisiones = CGRectMake(205, 3081, 2480, 3508);
+            NSString *RevisionesPdf =   @"·";
     
+            CGRect areaVMC = CGRectMake(205, 3123, 2480, 3508);
+            NSString *VMCPdf =   @"·";
 
 
-    
-    //Puntos
-    CGRect areaPerfil = CGRectMake(205, 2942, 2480, 3508);
-    NSString *PerfilPdf =   @"·";
-    CGRect areaPuntosPerfil = CGRectMake(205, 2988, 2480, 3508);
-    NSString *PuntosPerfilPdf =   @"·";
-    CGRect areaZonasDespegue = CGRectMake(205, 3031, 2480, 3508);
-    NSString *areaZonasDespeguePdf =   @"·";
-    CGRect areaRevisiones = CGRectMake(205, 3081, 2480, 3508);
-    NSString *RevisionesPdf =   @"·";
-    CGRect areaVMC = CGRectMake(205, 3123, 2480, 3508);
-    NSString *VMCPdf =   @"·";
-    
-    
-
-    
-    
-    
-    
-
-      //FECHA DE LA OPERACIÓN--------------------------------------------------//
+    //FECHA DE LA OPERACIÓN--------------------------------------------------//
     
         //FechaCampo
         CGRect areaFechaCampo = CGRectMake(2022, 3295, 2480, 3508);
         NSString *FechaCampoPdf =  @"12-12-2016";
 
-
-
         //SelectorTipoOperacion
-        CGRect areaSelectorTipoOperacion = CGRectMake(0, 0, 2480, 3508);//SELECTOR
+        CGRect areaSelectorTipoOperacion = CGRectMake(0, 0, 2480, 3508);//
         NSString *SelectorTipoPdf =  NombreCompletoPilotoCampo.text;
 
     
@@ -403,85 +362,59 @@
     if (ActividadesDeInvestigacion.on) {
          [ActividadesDeInvestigacionPdf drawInRect:areaActividadesDeInvestigacionCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (TratamientosAereos.on) {
        [TratamientosPdf drawInRect:areaTratamientosCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (Fotografia.on) {
         [FotografiaPdf drawInRect:areaFotografiaCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (InvestigacionReconocimiento.on) {
         [InvestigacionPdf drawInRect:areaInvestigacionCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (ObservacionVigilancia.on) {
         [ObservacionPdf drawInRect:areaObservacionCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (PublicidadAerea.on) {
         [PublicidadPdf drawInRect:areaPublicidadCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (OperacionesEmergencia.on) {
            [OperacionesPdf drawInRect:areaOperacionesCampo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (OtrosTrabajos.on) {
          [OtrosPdf drawInRect:areaOtrosCampo withAttributes:misAtributospunto];}
     else{Nil;}
 
         //ESPECIAL
-    
     if (VueloPrueba.on) {
         [VueloPruebaPdf drawInRect:areaVueloPrueba withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (VueloDemostracion.on) {
         [VueloDemostracioPdf drawInRect:areaVueloDemostracion withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (VueloProgramasInvestigacion.on) {
          [VueloProgramasPdf drawInRect:areaVueloProgramas withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (VueloDesarrollo.on) {
        [VueloDesarrolloPdf drawInRect:areaVueloDesarrollo withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (VuelosID.on) {
         [VueloIDPdf drawInRect:areaVueloID withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (VuelosPruebaNecesarios.on) {
         [VueloPruebaNecesariosPdf drawInRect:areaVueloPruebaNecesarios withAttributes:misAtributospunto];}
     else{Nil;}
-    
     if (NoSujeto.on) {
             [NoSujetoPdf drawInRect:areaNoSujeto withAttributes:misAtributospunto];}
     else{Nil;}
- 
     
     //TIPO DE OPERACION, DESCRIPCIÓN Y LOCALIZADOS------------------------------------//
   
     if (SelectorTipoOperacion.selectedSegmentIndex == 0) {
-         [VLOPdf drawInRect:areaVLO withAttributes:misAtributospuntogordo];
-    }
+         [VLOPdf drawInRect:areaVLO withAttributes:misAtributospuntogordo];}
     if (SelectorTipoOperacion.selectedSegmentIndex == 1) {
-        [EVLOPdf drawInRect:areaEVLO withAttributes:misAtributospuntogordo];
-    }
-    
+        [EVLOPdf drawInRect:areaEVLO withAttributes:misAtributospuntogordo];}
     if (SelectorTipoOperacion.selectedSegmentIndex == 2) {
-        [EVLOSPdf drawInRect:areaBVLOS withAttributes:misAtributospuntogordo];}
-    
-    
-
-    
-   
-    
-
-    
+        [EVLOSPdf drawInRect:areaBVLOS withAttributes:misAtributospuntogordo];
     
     
     //[TipoOperacionSeleccionadaPdf drawInRect:areaTipoOperacionSeleccionadaCampo withAttributes:misAtributos];
@@ -498,12 +431,10 @@
        [RequiereCoordinacionPdf drawInRect:areaRequiereCoordinacion withAttributes:misAtributospunto];}
     else{Nil;}
     if (NecesarioNOTAM.on) {
-        [NecesariaPublicacionPdf  drawInRect:areaNecesariaPublicacion withAttributes:misAtributospunto];
-       }
+        [NecesariaPublicacionPdf  drawInRect:areaNecesariaPublicacion withAttributes:misAtributospunto];}
     else{Nil;}
     if (NecesarioNOTAM.on) {
-        [NecesariaPublicacionPdf  drawInRect:areaNecesariaPublicacion withAttributes:misAtributospunto];
-    }
+        [NecesariaPublicacionPdf  drawInRect:areaNecesariaPublicacion withAttributes:misAtributospunto];}
     else{Nil;}
     
     
@@ -527,57 +458,31 @@
     
     //Puntos gordos
         if (SelectorCondicionesMeteorologicas.selectedSegmentIndex == 0) {
-            [CondicionVMCPdf drawInRect:areaCondicionVMC withAttributes:misAtributospuntogordo];
-        }
+            [CondicionVMCPdf drawInRect:areaCondicionVMC withAttributes:misAtributospuntogordo];}
         if (SelectorCondicionesMeteorologicas.selectedSegmentIndex == 1) {
-            [CondicionIMCPdf drawInRect:areaCondicionIMC withAttributes:misAtributospuntogordo];
-        }
-
-        
-        
-        
-        
-        
+            [CondicionIMCPdf drawInRect:areaCondicionIMC withAttributes:misAtributospuntogordo];}
+  
     //Puntos
     
     if (PerfilTodo.on) {
-        [PerfilPdf drawInRect:areaPerfil withAttributes:misAtributospunto];
-    }
+        [PerfilPdf drawInRect:areaPerfil withAttributes:misAtributospunto];}else{Nil;}
+    if (TodosPuntosPerfil.on) {[PuntosPerfilPdf drawInRect:areaPuntosPerfil withAttributes:misAtributospunto];}
     else{Nil;}
-    if (TodosPuntosPerfil.on) {
-       [PuntosPerfilPdf drawInRect:areaPuntosPerfil withAttributes:misAtributospunto];
-    }
+    if (ZonasDespegue.on) {[areaZonasDespeguePdf drawInRect:areaZonasDespegue withAttributes:misAtributospunto];}
     else{Nil;}
-    if (ZonasDespegue.on) {
-        [areaZonasDespeguePdf drawInRect:areaZonasDespegue withAttributes:misAtributospunto];
-    }
+    if (Revisiones.on) {[RevisionesPdf drawInRect:areaRevisiones withAttributes:misAtributospunto];}
     else{Nil;}
-    if (Revisiones.on) {
-        [RevisionesPdf drawInRect:areaRevisiones withAttributes:misAtributospunto];
-    }
-    else{Nil;}
-    
-    if (CondicionesMeteorologicasVMC.on) {
-        [VMCPdf drawInRect:areaVMC withAttributes:misAtributospunto];
-    }
+    if (CondicionesMeteorologicasVMC.on) {[VMCPdf drawInRect:areaVMC withAttributes:misAtributospunto];}
     else{Nil;}
     
 
-    
-    
-
-
-
-    
     
     //FECHA DE LA OPERACIÓN---------------------------------------------------------//
     [FechaCampoPdf drawInRect:areaFechaCampo withAttributes:misAtributosFecha];
     
     //[SelectorTipoPdf drawInRect:areaSelectorTipoOperacion withAttributes:misAtributos];
-    
-
 }
-
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -590,13 +495,11 @@
 
 - (IBAction)GenerarPdfBoton:(id)sender {
     tamañoPagina = CGSizeMake(2480, 3508);
-    NSString *nombreArchivo = @"PlanVueloPreliminar.pdf";
-    
-    NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-    NSString *directorioArchivo = [ruta objectAtIndex:0];
-    NSString *rutaPdfConNombreArchivo = [directorioArchivo stringByAppendingPathComponent:nombreArchivo];
-    [self CrearPdf:rutaPdfConNombreArchivo];
+        NSString *nombreArchivo = @"PlanVueloPreliminar.pdf";
+        NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *directorioArchivo = [ruta objectAtIndex:0];
+        NSString *rutaPdfConNombreArchivo = [directorioArchivo stringByAppendingPathComponent:nombreArchivo];
+            [self CrearPdf:rutaPdfConNombreArchivo];
 }
 
 //MUESTRA VENTANA FLOTANTE DEL PDF-------------------------------------------------------//
@@ -607,15 +510,13 @@
     NSString *documentsDirectory = [ruta objectAtIndex:0];
     NSString *fileName = [NSString stringWithFormat:@"%@/PlanVueloPreliminar.pdf",
                           documentsDirectory];
-    
-    
     NSURL *url = [NSURL fileURLWithPath:fileName];
     NSURLRequest  *solicita = [NSURLRequest requestWithURL:url];
-    [FlotanteMuestraPdf loadRequest:solicita];
-    [FlotanteMuestraPdf setScalesPageToFit:YES];
     
-    [FlotanteMuestraPdf setHidden:NO];
-    [BotonCerrarFlotante setHidden:NO];
+        [FlotanteMuestraPdf loadRequest:solicita];
+        [FlotanteMuestraPdf setScalesPageToFit:YES];
+        [FlotanteMuestraPdf setHidden:NO];
+        [BotonCerrarFlotante setHidden:NO];
 }
 
 //ENVIA EMAIL----------------------------------------------------------------------------//
@@ -646,47 +547,45 @@
     
     //Muestra el Controlador del Email por la pantalla
     [mc addAttachmentData:dataToBeEncrypted mimeType:@"application/pdf" fileName:@"PlanVueloPreliminar.pdf"];
-    [self presentViewController:mc animated:YES completion:NULL];
-}
+    [self presentViewController:mc animated:YES completion:NULL];}
 
 //OCULTA VENTANA FLOTANTE DEL PDF-------------------------------------------------------//
 
 - (IBAction)OcultaFlotantePdf:(id)sender {
-     [FlotanteMuestraPdf setHidden:YES];
-    [BotonCerrarFlotante setHidden:YES];
-}
-
+    [FlotanteMuestraPdf setHidden:YES];
+    [BotonCerrarFlotante setHidden:YES];}
 
 //OCULTA TECLADO------------------------------------------------------------------------//
 
 - (IBAction)OcultarTeclado:(id)sender {
-        [self resignFirstResponder];
-}
+        [self resignFirstResponder];}
 
-//ESTABLECE FECHA Y HORA---------------------------------------------------------------//
-
-//SELECTOR TIPO DE OPERACION-----------------------------------------------------------//
-
-
-
-
-- (IBAction)BotonDefineFEcha:(id)sender {
-    [FlotanteSelectorFecha setHidden:NO];
-    [_SelectorDatePicker setHidden:NO];
-    [CierraFechaBoton setHidden:NO];
-}
-
+//OCULTA FECHA------------------------------------------------------------------------//
 - (IBAction)CierraFechaBoton:(id)sender {
     NSDateFormatter *formato=[[NSDateFormatter alloc]init];
-    [formato setDateFormat:@"dd/MMM/YYY hh:min a"];
-    Fecha.text=[NSString stringWithFormat:@"%@",[formato stringFromDate:_SelectorDatePicker.date]];
-
-
+    [formato setDateFormat:@"dd/MMM/YYY"];
+    FechaActual.text=[NSString stringWithFormat:@"%@",[formato stringFromDate:_SelectorDatePicker.date]];
     [FlotanteSelectorFecha setHidden:YES];
     [_SelectorDatePicker setHidden:YES];
-    [CierraFechaBoton setHidden:YES];
+    [CierraFechaBoton setHidden:YES];}
+
+//MUESTRA FECHA------------------------------------------------------------------------//
+- (IBAction)IntroduceFechaBoton:(id)sender{
+    [FlotanteSelectorFecha setHidden:NO];
+    [_SelectorDatePicker setHidden:NO];
+    [CierraFechaBoton setHidden:NO];}
+
+- (IBAction)SuenaClick:(id)sender
+{
+
+    AudioServicesPlaySystemSound(BotonTipo2);
+
 }
+
 @end
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //COMPandGO-----------------------------------------------------------------------------//

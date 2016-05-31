@@ -65,9 +65,10 @@
             <string>KelsonSans-Light</string>
             <string>KelsonSans-Light</string>
             <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
+            <string>KelsonSans-Light</string>
         </mutableArray>
         <mutableArray key="Kelson Sans Regular.otf">
-            <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
             <string>KelsonSans-Regular</string>
@@ -429,7 +430,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" id="pL6-vO-hb2">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="3000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="BeP-Qa-0Oa">
@@ -440,6 +441,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="768" height="3058"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g1B-sJ-tmn">
+                                                <rect key="frame" x="10" y="10" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="DPW-VA-Ltb">
                                                 <rect key="frame" x="-2" y="34" width="768" height="26"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -949,10 +957,10 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLK-Up-UFI">
-                                                <rect key="frame" x="447" y="2679" width="65" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha Actual:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLK-Up-UFI">
+                                                <rect key="frame" x="454" y="2670" width="144" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="26"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1086,111 +1094,169 @@
                                                 <rect key="frame" x="65" y="802" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319757791" blue="0.087477440461198985" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="zWg-UK-2eP"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Mci-zB-JUt">
                                                 <rect key="frame" x="65" y="841" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="ai2-fM-Mzv"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="BrV-e4-zVG">
                                                 <rect key="frame" x="65" y="916" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="8aE-jF-pPe"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="yT5-lU-uUE">
                                                 <rect key="frame" x="65" y="974" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="Y7F-Mu-EED"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Tb9-6O-k2a">
                                                 <rect key="frame" x="65" y="1080" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="AhC-Y9-ZdL"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="t7b-Hx-wWC">
                                                 <rect key="frame" x="65" y="1137" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="ltl-fp-d7S"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="2OX-iS-27Q">
                                                 <rect key="frame" x="65" y="1175" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="fwS-2W-hVr"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fCT-L8-dfx">
                                                 <rect key="frame" x="65" y="1212" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="gL2-DM-pMg"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="eWR-ps-WUM">
                                                 <rect key="frame" x="66" y="1310" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="fjp-wc-Xvi"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Mpi-oE-GJm">
                                                 <rect key="frame" x="66" y="1349" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="SAR-zJ-h72"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="KPt-hk-TSy">
                                                 <rect key="frame" x="66" y="1386" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="PDb-C9-lo2"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="wMx-Ci-Jng">
                                                 <rect key="frame" x="66" y="1423" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="IZf-4W-uH1"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Kpw-pp-XZ9">
                                                 <rect key="frame" x="66" y="1484" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
-                                            </switch>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="INf-dT-TJD">
-                                                <rect key="frame" x="66" y="1523" width="51" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="32L-G5-bU5"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="7GW-6L-NYg">
                                                 <rect key="frame" x="66" y="1577" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="H8U-3n-rUZ"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="g5o-86-cDQ">
                                                 <rect key="frame" x="66" y="2066" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="jc3-nJ-gZy"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="XgJ-Vr-5R0">
                                                 <rect key="frame" x="66" y="2105" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="CRs-Zc-kpw"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="REu-2L-PcY">
                                                 <rect key="frame" x="65" y="2382" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="ROc-VF-DGG"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="yLv-Le-EFc">
                                                 <rect key="frame" x="66" y="2434" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="HxE-P8-Pxn"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RL6-Yh-vqN">
                                                 <rect key="frame" x="66" y="2505" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="I6B-5i-BSE"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="1x1-Fs-dKM">
                                                 <rect key="frame" x="66" y="2554" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="vG1-Mh-FLe"/>
+                                                </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="cUT-ug-oa2">
                                                 <rect key="frame" x="66" y="2606" width="51" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="Xgi-dd-OrX"/>
+                                                </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPERACIÓN NORMAL:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QwL-9h-N1j">
                                                 <rect key="frame" x="117" y="766" width="272" height="29"/>
@@ -1281,6 +1347,10 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DataPicker.png" id="Xch-ae-vsk">
+                                                <rect key="frame" x="446" y="2467" width="278" height="199"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQn-Z3-G6w">
                                                 <rect key="frame" x="587" y="2827" width="129" height="125"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1307,7 +1377,7 @@
                                                 </connections>
                                             </button>
                                             <webView opaque="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" id="KtY-YQ-nQa">
-                                                <rect key="frame" x="48" y="2058" width="689" height="967"/>
+                                                <rect key="frame" x="48" y="2000" width="689" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <dataDetectorType key="dataDetectorTypes"/>
@@ -1320,40 +1390,46 @@
                                                     <action selector="OcultaFlotantePdf:" destination="sO6-kc-0fl" eventType="touchUpInside" id="BzQ-43-fUy"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JZA-EQ-Qii">
-                                                <rect key="frame" x="516" y="2682" width="124" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="KelsonSans-Regular" family="Kelson Sans" pointSize="26"/>
-                                                <color key="textColor" red="0.98823529409999999" green="0.20901989160000001" blue="0.20014083299999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CIL-T7-D59">
-                                                <rect key="frame" x="334" y="2728" width="104" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="DEFINE FECHA"/>
-                                                <connections>
-                                                    <action selector="BotonDefineFEcha:" destination="sO6-kc-0fl" eventType="touchUpInside" id="jaf-23-2vF"/>
-                                                </connections>
-                                            </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gris.png" id="Xch-ae-vsk">
-                                                <rect key="frame" x="222" y="2366" width="392" height="271"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="45r-GP-POD">
-                                                <rect key="frame" x="246" y="2413" width="361" height="216"/>
+                                                <rect key="frame" x="454" y="2475" width="262" height="183"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="486316460.93286699">
                                                     <!--2016-05-30 15:54:20 +0000-->
                                                 </date>
+                                                <locale key="locale" localeIdentifier="es"/>
                                             </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gLu-dy-0mo">
-                                                <rect key="frame" x="246" y="2376" width="46" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gLu-dy-0mo">
+                                                <rect key="frame" x="433" y="2456" width="36" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" image="BotonCierra.png"/>
                                                 <connections>
                                                     <action selector="CierraFechaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="JPN-w7-Ch4"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LUL-ng-ksu">
+                                                <rect key="frame" x="494" y="2666" width="231" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="26"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.20901989160000001" blue="0.20014083299999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kIm-U4-SVU">
+                                                <rect key="frame" x="643" y="2705" width="82" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="KelsonSans-Light" family="Kelson Sans" pointSize="22"/>
+                                                <state key="normal" title="(Cambiar)"/>
+                                                <connections>
+                                                    <action selector="IntroduceFechaBoton:" destination="sO6-kc-0fl" eventType="touchUpInside" id="dCi-xQ-CEE"/>
+                                                </connections>
+                                            </button>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="INf-dT-TJD">
+                                                <rect key="frame" x="66" y="1523" width="51" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="onTintColor" red="1" green="0.78639126319999997" blue="0.08747744046" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="SuenaClick:" destination="sO6-kc-0fl" eventType="valueChanged" id="kar-C8-wJt"/>
+                                                </connections>
+                                            </switch>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -1373,12 +1449,11 @@
                         <outlet property="BotonCerrarFlotante" destination="YYu-3m-kCE" id="Gf4-6v-oVJ"/>
                         <outlet property="CierraFechaBoton" destination="gLu-dy-0mo" id="jj0-LI-o0p"/>
                         <outlet property="CondicionesMeteorologicasVMC" destination="cUT-ug-oa2" id="rjo-BO-lVR"/>
-                        <outlet property="DefineFecha" destination="CIL-T7-D59" id="ZkV-8b-LjJ"/>
                         <outlet property="DescripcionObjetivoCampo" destination="xfG-ZG-ZQo" id="mHQ-6j-C9C"/>
                         <outlet property="DiasProhibidosCampo" destination="Tkj-go-ess" id="fi4-pa-zby"/>
                         <outlet property="DniCifNifOperadorCampo" destination="un9-zc-3gw" id="Ew3-bf-Jw5"/>
                         <outlet property="DniCifNifPilotoCampo" destination="HQ3-P1-RMz" id="BqQ-Tr-Ohz"/>
-                        <outlet property="Fecha" destination="JZA-EQ-Qii" id="ENk-wb-P2f"/>
+                        <outlet property="FechaActual" destination="LUL-ng-ksu" id="X9a-WP-7uY"/>
                         <outlet property="FlotanteMuestraPdf" destination="KtY-YQ-nQa" id="NUZ-Kl-g4o"/>
                         <outlet property="FlotanteSelectorFecha" destination="Xch-ae-vsk" id="5dY-lD-wRI"/>
                         <outlet property="Fotografia" destination="BrV-e4-zVG" id="bqe-XA-r59"/>
@@ -1430,6 +1505,7 @@
         <image name="BotonCierra.png" width="42" height="42"/>
         <image name="BotonCreaRutaGrande.png" width="256" height="256"/>
         <image name="BotonDocuemntosGrande.png" width="256" height="256"/>
+        <image name="DataPicker.png" width="338" height="241"/>
         <image name="FondoLargo.jpg" width="2133" height="9956"/>
         <image name="FranjaNegra.png" width="1080" height="184"/>
         <image name="IconoAyuda.png" width="95" height="92"/>
@@ -1440,7 +1516,6 @@
         <image name="blanco.png" width="635" height="79"/>
         <image name="fondo.jpg" width="1536" height="2048"/>
         <image name="fondo2.jpg" width="1920" height="1080"/>
-        <image name="gris.png" width="113" height="84"/>
         <image name="logofondo.png" width="807" height="849"/>
         <image name="peligro.png" width="312" height="32"/>
         <image name="peligroAeronave.png" width="376" height="32"/>

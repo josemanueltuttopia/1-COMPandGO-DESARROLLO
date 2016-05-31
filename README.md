@@ -15,6 +15,7 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
+| 5.2.2  | Sonidos en Ckecks|
 | 5.2.1  | Selector Emergente de Fecha funcionando con una etiqueta|
 | 5.2.0  | Segemented Controllers y Checkers termiandos|
 | 5.1.0  | Alinecioanes de campos de formularios, posicion de campos en pdf|

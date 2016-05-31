@@ -26,6 +26,8 @@
 		D8810D811CF213FA006C9A4D /* Pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D801CF213FA006C9A4D /* Pdf.png */; };
 		D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D861CF22B3F006C9A4D /* IconoEmail.png */; };
 		D8810D891CF22C24006C9A4D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8810D881CF22C24006C9A4D /* MessageUI.framework */; };
+		D8B69AE21CFCD393009ACCAD /* DataPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE11CFCD393009ACCAD /* DataPicker.png */; };
+		D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE31CFCDFF3009ACCAD /* click.m4a */; };
 		D8C4D8171CF1CBA4006188EF /* Panton-BlackCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8095F5C1CF1C3C6001774CA /* Panton-BlackCaps.otf */; };
 		D8C4D8191CF1CD86006188EF /* Kelson Sans Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8C4D8181CF1CD75006188EF /* Kelson Sans Regular.otf */; };
 		D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C4D81A1CF1D3AD006188EF /* FranjaNegra.png */; };
@@ -98,6 +100,8 @@
 		D8810D801CF213FA006C9A4D /* Pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pdf.png; sourceTree = "<group>"; };
 		D8810D861CF22B3F006C9A4D /* IconoEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoEmail.png; sourceTree = "<group>"; };
 		D8810D881CF22C24006C9A4D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D8B69AE11CFCD393009ACCAD /* DataPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DataPicker.png; sourceTree = "<group>"; };
+		D8B69AE31CFCDFF3009ACCAD /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		D8C4D8181CF1CD75006188EF /* Kelson Sans Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kelson Sans Regular.otf"; sourceTree = "<group>"; };
 		D8C4D81A1CF1D3AD006188EF /* FranjaNegra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FranjaNegra.png; sourceTree = "<group>"; };
 		D8C4D81C1CF1E195006188EF /* SigueIcono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SigueIcono.png; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 		D8F06DF71CEE2E2300858A6A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D8B69AE31CFCDFF3009ACCAD /* click.m4a */,
+				D8B69AE11CFCD393009ACCAD /* DataPicker.png */,
 				D847C73D1CFCA0EB004926F4 /* gris.png */,
 				D83E658F1CFA0EE800143421 /* peligroMeteorologia.png */,
 				D83E658D1CFA09C000143421 /* peligroRestricciones.png */,
@@ -436,6 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */,
 				D84640FB1CF9BB9000718744 /* SpecialElite.ttf in Resources */,
 				D8810D811CF213FA006C9A4D /* Pdf.png in Resources */,
 				D83E65901CFA0EE800143421 /* peligroMeteorologia.png in Resources */,
@@ -467,6 +474,7 @@
 				D8F06E171CEFA13F00858A6A /* BotonCreaRutaGrande.png in Resources */,
 				D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */,
 				D84640FD1CF9BCED00718744 /* FondoLargo.jpg in Resources */,
+				D8B69AE21CFCD393009ACCAD /* DataPicker.png in Resources */,
 				D8F06E091CEF972000858A6A /* fondo.jpg in Resources */,
 				D8F06E211CF0518B00858A6A /* logofondo.png in Resources */,
 				D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */,

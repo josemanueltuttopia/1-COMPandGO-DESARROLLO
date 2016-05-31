@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Versión 5.0.10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhB-n1-U5r">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Versión 5.2.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhB-n1-U5r">
                                 <rect key="frame" x="501" y="897" width="247" height="107"/>
                                 <fontDescription key="fontDescription" name="SpecialElite-Regular" family="Special Elite" pointSize="25"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.73725490199999999" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>

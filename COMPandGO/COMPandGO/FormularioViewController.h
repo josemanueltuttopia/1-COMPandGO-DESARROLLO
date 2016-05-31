@@ -15,17 +15,23 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import <AudioToolbox/AudioToolbox.h> //Para reproducir sonidos
 
 
 @interface FormularioViewController : UIViewController <MFMailComposeViewControllerDelegate>
 {
 
+    SystemSoundID BotonTipo2;
+
+
+  
+//CAMPOS DEL FORMULARIO a RELLENAR------------------------------------------------------//
     
+     //Views
     IBOutlet UIScrollView *ScrollVertical;//-----------------SCROLL DEL
+    IBOutlet UIImageView *FlotanteSelectorFecha;
     __weak IBOutlet UIWebView *FlotanteMuestraPdf;//---------VISTA DE VENTANA FLOTANTE
 
-    IBOutlet UIImageView *FlotanteSelectorFecha;
-//CAMPOS DEL FORMULARIO a RELLENAR------------------------------------------------------//
     
     //TextFileds
     IBOutlet UITextField *NombreCompletoPilotoCampo;
@@ -46,6 +52,7 @@
     IBOutlet UITextField *DiasProhibidosCampo;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
+    IBOutlet UITextField *Fecha;
     
     //Selectores
     IBOutlet UISegmentedControl *SelectorTipoOperacion;
@@ -75,7 +82,10 @@
     IBOutlet UISwitch *ZonasDespegue;
     IBOutlet UISwitch *Revisiones;
     IBOutlet UISwitch *CondicionesMeteorologicasVMC;
-    IBOutlet UILabel *Fecha;
+
+    //Etiquetas
+    IBOutlet UILabel *FechaActual;
+
     
 //BOTONES VENTANA FLOTANTE PARA ABRIR Y CERRAR------------------------------------------//
      __weak IBOutlet UIButton *BotonCerrarFlotante;
@@ -91,11 +101,10 @@
 - (IBAction)EnviarEmail:(id)sender; //-----------------ENVÍA EMAIL
 - (IBAction)OcultaFlotantePdf:(id)sender;//------------OCULTA PDF FLOTANTE
 - (IBAction)OcultarTeclado:(id)sender;//---------------OCULTA TECLADO
-@property (strong, nonatomic) IBOutlet UIButton *DefineFecha;
-- (IBAction)BotonDefineFEcha:(id)sender;
+- (IBAction)CierraFechaBoton:(id)sender;//-------------OCULTA TFECHA
+- (IBAction)IntroduceFechaBoton:(id)sender;//----------MUESTRA TFECHA
 
-- (IBAction)CierraFechaBoton:(id)sender;
-
+- (IBAction)SuenaClick:(id)sender;
 
 @end
 
