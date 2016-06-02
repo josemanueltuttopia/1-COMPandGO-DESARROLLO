@@ -165,8 +165,8 @@
             UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:46.f];
             NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
     //DEFINICIÓN DE TIPOGRAFÍA DE LA FECHA DEL PDF GENERADO
-            UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f];
-            NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha};
+            //UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f]; -----SIN USAR
+            //NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha}; -----SIN USAR
     //DEFINICIÓN DE TIPOGRAFÍA DE LOS PUNTOS DE LOS CHECKS (PEQUEÑOS)
             UIFont *tipografiapunto = [UIFont fontWithName:@"AmericanTypewriter" size:200.f];
             NSDictionary *misAtributospunto = @{ NSFontAttributeName:tipografiapunto};
@@ -290,11 +290,11 @@
             CGRect areaNecesariaPublicacion = CGRectMake(205, 2536, 2480, 3508);
             NSString *NecesariaPublicacionPdf =   @"·";
         //Días Prohibidos
-            CGRect areaProhibidoDias = CGRectMake(205, 2578, 2480, 3508);
-            NSString *ProhibidoDiasPdf =   @"·";
+        //    CGRect areaProhibidoDias = CGRectMake(205, 2578, 2480, 3508); -----SIN USAR
+        //    NSString *ProhibidoDiasPdf =   @"·"; -----SIN USAR
         //Horas Prohibidas
-            CGRect areaProhibidoHoras = CGRectMake(205, 2620, 2480, 3508);
-            NSString *ProhibidoHorasPdf =   @"·";
+            //CGRect areaProhibidoHoras = CGRectMake(205, 2620, 2480, 3508); -----SIN USAR
+            //NSString *ProhibidoHorasPdf =   @"·"; -----SIN USAR
         //DiasProhibidosCampo
             CGRect areaDiasProhibidosCampo = CGRectMake(1113, 2649, 2480, 3508);
             NSString *DiasProhibidosPdf =  @"AASSDggg";
@@ -336,12 +336,12 @@
     //FECHA DE LA OPERACIÓN--------------------------------------------------//
     
         //FechaCampo
-        CGRect areaFechaCampo = CGRectMake(2022, 3295, 2480, 3508);
-        NSString *FechaCampoPdf =  @"12-12-2016";
+       // CGRect areaFechaCampo = CGRectMake(2022, 3295, 2480, 3508);
+       // NSString *FechaCampoPdf =  @"12-12-2016";
 
         //SelectorTipoOperacion
-        CGRect areaSelectorTipoOperacion = CGRectMake(0, 0, 2480, 3508);//
-        NSString *SelectorTipoPdf =  NombreCompletoPilotoCampo.text;
+        //CGRect areaSelectorTipoOperacion = CGRectMake(0, 0, 2480, 3508);//
+       // NSString *SelectorTipoPdf =  NombreCompletoPilotoCampo.text;
 
     
  
@@ -485,7 +485,7 @@
 
     
     //FECHA DE LA OPERACIÓN---------------------------------------------------------//
-    [FechaCampoPdf drawInRect:areaFechaCampo withAttributes:misAtributosFecha];
+    //[FechaCampoPdf drawInRect:areaFechaCampo withAttributes:misAtributosFecha];
     
     //[SelectorTipoPdf drawInRect:areaSelectorTipoOperacion withAttributes:misAtributos];
 }

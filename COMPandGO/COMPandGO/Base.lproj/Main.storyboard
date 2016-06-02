@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3sd-lS-3EV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-736" y="-1526"/>
+            <point key="canvasLocation" x="-736" y="-562"/>
         </scene>
         <!--GaleriaMosaico-->
         <scene sceneID="OOw-bc-Ci6">
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRU-KC-cNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="-1112"/>
+            <point key="canvasLocation" x="70" y="-562"/>
         </scene>
         <!--GaleriaPreview-->
         <scene sceneID="t9J-Lt-f2A">
@@ -225,35 +225,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTf-VC-n5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196" y="-1124"/>
+            <point key="canvasLocation" x="900" y="-562"/>
         </scene>
-        <!--Grabación-->
-        <scene sceneID="hwa-Sk-oyZ">
+        <!--Grabacion View Controller-->
+        <scene sceneID="mxu-5s-wN8">
             <objects>
-                <viewController title="Grabación" id="IWE-yM-FqJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3al-0t-hCV">
+                <viewController id="lGO-xH-WJb" customClass="GrabacionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBJ-0z-kai">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLargo.jpg" id="io8-5r-xfA">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <view contentMode="scaleToFill" id="rL4-8l-Wa9">
+                                <rect key="frame" x="0.0" y="543" width="600" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LYp-dw-bcY">
-                                <rect key="frame" x="20" y="45" width="144" height="90"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="BWF-GV-4Uj">
+                                        <rect key="frame" x="359" y="15" width="189" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="CaptureMode"/>
+                                            <segment title="RecordMode"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="changeWorkModeAction:" destination="lGO-xH-WJb" eventType="valueChanged" id="tZq-ad-HeL"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OGO-uc-zrX">
+                                        <rect key="frame" x="257" y="8" width="87" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Start Record">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordAction:" destination="lGO-xH-WJb" eventType="touchUpInside" id="QhX-O4-pDI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hpo-C5-hkC">
+                                        <rect key="frame" x="89" y="8" width="55" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Capture">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="captureAction:" destination="lGO-xH-WJb" eventType="touchUpInside" id="Xfp-8b-V8G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="OjE-W1-pt1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="545"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="IconoVuleve.png"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="lSM-ya-Wxk"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PqK-JX-p0q">
+                                <rect key="frame" x="200" y="28" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="changeWorkModeSegmentControl" destination="BWF-GV-4Uj" id="IAM-GH-Ot5"/>
+                        <outlet property="currentRecordTimeLabel" destination="PqK-JX-p0q" id="E78-eL-trf"/>
+                        <outlet property="fpvPreviewView" destination="OjE-W1-pt1" id="Ggb-X8-FcR"/>
+                        <outlet property="recordBtn" destination="OGO-uc-zrX" id="6wW-b7-YrR"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="94q-K2-uX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XuT-tG-fff" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1606" y="379"/>
+            <point key="canvasLocation" x="338" y="590"/>
         </scene>
         <!--Principal-->
         <scene sceneID="tne-QT-ifu">
@@ -368,7 +412,7 @@
                                 <state key="normal" title="Button" image="Camara.png"/>
                                 <connections>
                                     <action selector="Boton1Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eG4-VP-dGD"/>
-                                    <segue destination="IWE-yM-FqJ" kind="modal" modalTransitionStyle="crossDissolve" id="RXa-nf-gci"/>
+                                    <segue destination="lGO-xH-WJb" kind="modal" modalTransitionStyle="crossDissolve" id="BMy-bU-KXj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FranjaNegra.png" id="ieA-H2-siy">
@@ -1621,8 +1665,8 @@
         <image name="peligroTipoOperacion.png" width="624" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dph-5b-tDA"/>
-        <segue reference="sHL-mW-Mcq"/>
+        <segue reference="6ce-Vc-BkV"/>
+        <segue reference="yl3-BV-wUb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

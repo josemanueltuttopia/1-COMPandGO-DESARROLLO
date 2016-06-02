@@ -15,6 +15,7 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
+| 5.4.00  | Implementadas funciones de cámara|
 | 5.3.00  | Se añade funcion en menú Principal: Grabaciones|
 | 5.2.02  | Sonidos en Segmented Controllers del Formulario|
 | 5.2.02  | Sonidos en Ckecks del Formulario|
