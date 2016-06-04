@@ -2,7 +2,7 @@
 //  GaleriaViewController.h
 //  COMPandGO
 //
-//  Created by Jose Braña on 21/5/16.
+//  Created by Jose Braña on 3/6/16.
 //  Copyright © 2016 Jose Braña. All rights reserved.
 //
 

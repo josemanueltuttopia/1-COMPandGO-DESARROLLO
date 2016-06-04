@@ -25,6 +25,10 @@
 		D847C73E1CFCA0EB004926F4 /* gris.png in Resources */ = {isa = PBXBuildFile; fileRef = D847C73D1CFCA0EB004926F4 /* gris.png */; };
 		D8810D811CF213FA006C9A4D /* Pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D801CF213FA006C9A4D /* Pdf.png */; };
 		D8810D871CF22B3F006C9A4D /* IconoEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = D8810D861CF22B3F006C9A4D /* IconoEmail.png */; };
+		D8B373261D01EF8D004F9C03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B373251D01EF8D004F9C03 /* Images.xcassets */; };
+		D8B373291D01F017004F9C03 /* GaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B373281D01F017004F9C03 /* GaleriaViewController.m */; };
+		D8B3732C1D0202B4004F9C03 /* playVideo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B3732A1D0202B4004F9C03 /* playVideo.png */; };
+		D8B3732F1D020359004F9C03 /* botongaleria.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B3732E1D020359004F9C03 /* botongaleria.png */; };
 		D8B69AE21CFCD393009ACCAD /* DataPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE11CFCD393009ACCAD /* DataPicker.png */; };
 		D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE31CFCDFF3009ACCAD /* click.m4a */; };
 		D8B69AE61CFDEDE2009ACCAD /* pdfsonido.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D8B69AE51CFDEDA5009ACCAD /* pdfsonido.m4a */; };
@@ -54,7 +58,6 @@
 		D8F06DA81CEE0D0A00858A6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06DA71CEE0D0A00858A6A /* main.m */; };
 		D8F06DAB1CEE0D0A00858A6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06DAA1CEE0D0A00858A6A /* AppDelegate.m */; };
 		D8F06DAE1CEE0D0A00858A6A /* PrincipalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06DAD1CEE0D0A00858A6A /* PrincipalViewController.m */; };
-		D8F06DB31CEE0D0A00858A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F06DB21CEE0D0A00858A6A /* Assets.xcassets */; };
 		D8F06DB61CEE0D0A00858A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F06DB41CEE0D0A00858A6A /* LaunchScreen.storyboard */; };
 		D8F06DC11CEE0D0A00858A6A /* COMPandGOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06DC01CEE0D0A00858A6A /* COMPandGOTests.m */; };
 		D8F06DCC1CEE0D0A00858A6A /* COMPandGOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06DCB1CEE0D0A00858A6A /* COMPandGOUITests.m */; };
@@ -69,7 +72,11 @@
 		D8F06E211CF0518B00858A6A /* logofondo.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F06E201CF0518B00858A6A /* logofondo.png */; };
 		D8F06E231CF0A79000858A6A /* PV.png in Resources */ = {isa = PBXBuildFile; fileRef = D8F06E221CF0A79000858A6A /* PV.png */; };
 		D8F06E651CF0B2AA00858A6A /* FormularioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06E641CF0B2AA00858A6A /* FormularioViewController.m */; };
-		D8F06E681CF0C53100858A6A /* GaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F06E671CF0C53100858A6A /* GaleriaViewController.m */; };
+		D8F7CB9F1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB9C1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.m */; };
+		D8F7CBA01D031AD200ADC3B4 /* DJIRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F7CB9E1D031AD200ADC3B4 /* DJIRootViewController.m */; };
+		D8F7CBA41D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F7CBA11D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPad.xib */; };
+		D8F7CBA51D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F7CBA21D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6.xib */; };
+		D8F7CBA61D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6+.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F7CBA31D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6+.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +145,11 @@
 		D847C73D1CFCA0EB004926F4 /* gris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gris.png; sourceTree = "<group>"; };
 		D8810D801CF213FA006C9A4D /* Pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pdf.png; sourceTree = "<group>"; };
 		D8810D861CF22B3F006C9A4D /* IconoEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoEmail.png; sourceTree = "<group>"; };
+		D8B373251D01EF8D004F9C03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8B373271D01F017004F9C03 /* GaleriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleriaViewController.h; sourceTree = "<group>"; };
+		D8B373281D01F017004F9C03 /* GaleriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleriaViewController.m; sourceTree = "<group>"; };
+		D8B3732A1D0202B4004F9C03 /* playVideo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playVideo.png; sourceTree = "<group>"; };
+		D8B3732E1D020359004F9C03 /* botongaleria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botongaleria.png; sourceTree = "<group>"; };
 		D8B69AE11CFCD393009ACCAD /* DataPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DataPicker.png; sourceTree = "<group>"; };
 		D8B69AE31CFCDFF3009ACCAD /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		D8B69AE51CFDEDA5009ACCAD /* pdfsonido.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pdfsonido.m4a; sourceTree = "<group>"; };
@@ -166,7 +178,6 @@
 		D8F06DAA1CEE0D0A00858A6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8F06DAC1CEE0D0A00858A6A /* PrincipalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrincipalViewController.h; sourceTree = "<group>"; };
 		D8F06DAD1CEE0D0A00858A6A /* PrincipalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrincipalViewController.m; sourceTree = "<group>"; };
-		D8F06DB21CEE0D0A00858A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F06DB51CEE0D0A00858A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F06DB71CEE0D0A00858A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8F06DBC1CEE0D0A00858A6A /* COMPandGOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COMPandGOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,8 +200,13 @@
 		D8F06E221CF0A79000858A6A /* PV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PV.png; sourceTree = "<group>"; };
 		D8F06E631CF0B2AA00858A6A /* FormularioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularioViewController.h; sourceTree = "<group>"; };
 		D8F06E641CF0B2AA00858A6A /* FormularioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularioViewController.m; sourceTree = "<group>"; };
-		D8F06E661CF0C53100858A6A /* GaleriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleriaViewController.h; sourceTree = "<group>"; };
-		D8F06E671CF0C53100858A6A /* GaleriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleriaViewController.m; sourceTree = "<group>"; };
+		D8F7CB9B1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIPlaybackMultiSelectViewController.h; sourceTree = "<group>"; };
+		D8F7CB9C1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIPlaybackMultiSelectViewController.m; sourceTree = "<group>"; };
+		D8F7CB9D1D031AD200ADC3B4 /* DJIRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIRootViewController.h; sourceTree = "<group>"; };
+		D8F7CB9E1D031AD200ADC3B4 /* DJIRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIRootViewController.m; sourceTree = "<group>"; };
+		D8F7CBA11D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DJIPlaybackMultiSelectViewController_iPad.xib; path = xibs/DJIPlaybackMultiSelectViewController_iPad.xib; sourceTree = "<group>"; };
+		D8F7CBA21D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DJIPlaybackMultiSelectViewController_iPhone6.xib; path = xibs/DJIPlaybackMultiSelectViewController_iPhone6.xib; sourceTree = "<group>"; };
+		D8F7CBA31D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6+.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "DJIPlaybackMultiSelectViewController_iPhone6+.xib"; path = "xibs/DJIPlaybackMultiSelectViewController_iPhone6+.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +249,7 @@
 				D8F06DAC1CEE0D0A00858A6A /* PrincipalViewController.h */,
 				D8F06DAD1CEE0D0A00858A6A /* PrincipalViewController.m */,
 				D8D46B9E1CF7550200A846C5 /* PlanVueloPreliminar.pdf */,
-				D8F06DB21CEE0D0A00858A6A /* Assets.xcassets */,
+				D8B373251D01EF8D004F9C03 /* Images.xcassets */,
 			);
 			name = PRINCIPAL;
 			sourceTree = "<group>";
@@ -293,7 +309,7 @@
 				D834EF671CF8C1FB00ED3411 /* PRINCIPAL */,
 				D8F06DE71CEE2C7100858A6A /* 1-Documentación */,
 				D8B69AF21CFE0F02009ACCAD /* 2-Grabación */,
-				D8F06DF21CEE2DB900858A6A /* 3-Mision */,
+				D8F06DF21CEE2DB900858A6A /* 3-Misión */,
 				D8F06DEE1CEE2D4000858A6A /* 4-Galería */,
 				D8F06DF61CEE2DFA00858A6A /* 5-Ayuda */,
 				D8DA33AC1D0082070077BEA2 /* Frameworks */,
@@ -341,19 +357,24 @@
 		D8F06DEE1CEE2D4000858A6A /* 4-Galería */ = {
 			isa = PBXGroup;
 			children = (
-				D8F06E661CF0C53100858A6A /* GaleriaViewController.h */,
-				D8F06E671CF0C53100858A6A /* GaleriaViewController.m */,
+				D8F7CB9B1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.h */,
+				D8F7CB9C1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.m */,
+				D8F7CB9D1D031AD200ADC3B4 /* DJIRootViewController.h */,
+				D8F7CB9E1D031AD200ADC3B4 /* DJIRootViewController.m */,
+				D8F7CBA71D031AF300ADC3B4 /* xibs */,
+				D8B373271D01F017004F9C03 /* GaleriaViewController.h */,
+				D8B373281D01F017004F9C03 /* GaleriaViewController.m */,
 			);
 			name = "4-Galería";
 			sourceTree = "<group>";
 		};
-		D8F06DF21CEE2DB900858A6A /* 3-Mision */ = {
+		D8F06DF21CEE2DB900858A6A /* 3-Misión */ = {
 			isa = PBXGroup;
 			children = (
 				D8F06DEF1CEE2DB300858A6A /* CrearRutaViewController.h */,
 				D8F06DF01CEE2DB300858A6A /* CrearRutaViewController.m */,
 			);
-			name = "3-Mision";
+			name = "3-Misión";
 			sourceTree = "<group>";
 		};
 		D8F06DF61CEE2DFA00858A6A /* 5-Ayuda */ = {
@@ -368,6 +389,8 @@
 		D8F06DF71CEE2E2300858A6A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				D8B3732A1D0202B4004F9C03 /* playVideo.png */,
+				D8B3732E1D020359004F9C03 /* botongaleria.png */,
 				D8B69AED1CFE034A009ACCAD /* Camara.png */,
 				D8B69AEB1CFDFD27009ACCAD /* iconoCreaPdf2.png */,
 				D8B69AE91CFDFBC6009ACCAD /* iconoCreaPdf.png */,
@@ -411,6 +434,16 @@
 				D8F06E081CEF972000858A6A /* fondo.jpg */,
 			);
 			name = Recursos;
+			sourceTree = "<group>";
+		};
+		D8F7CBA71D031AF300ADC3B4 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D8F7CBA11D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPad.xib */,
+				D8F7CBA21D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6.xib */,
+				D8F7CBA31D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6+.xib */,
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +571,7 @@
 				D8B69AEA1CFDFBC6009ACCAD /* iconoCreaPdf.png in Resources */,
 				D8B69AE61CFDEDE2009ACCAD /* pdfsonido.m4a in Resources */,
 				D8B69AE41CFDE144009ACCAD /* click.m4a in Resources */,
+				D8F7CBA41D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPad.xib in Resources */,
 				D84640FB1CF9BB9000718744 /* SpecialElite.ttf in Resources */,
 				D8810D811CF213FA006C9A4D /* Pdf.png in Resources */,
 				D83E65901CFA0EE800143421 /* peligroMeteorologia.png in Resources */,
@@ -557,10 +591,12 @@
 				D8C4D81B1CF1D3AD006188EF /* FranjaNegra.png in Resources */,
 				D8D46C261CF8A01700A846C5 /* PulsaSonido.m4a in Resources */,
 				D8F06E231CF0A79000858A6A /* PV.png in Resources */,
+				D8F7CBA51D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6.xib in Resources */,
 				D8B69AEE1CFE034B009ACCAD /* Camara.png in Resources */,
+				D8B3732C1D0202B4004F9C03 /* playVideo.png in Resources */,
 				D84641091CF9E4CC00718744 /* peligroAeronave.png in Resources */,
 				D84640FF1CF9CF0F00718744 /* blanco.png in Resources */,
-				D8F06DB31CEE0D0A00858A6A /* Assets.xcassets in Resources */,
+				D8B3732F1D020359004F9C03 /* botongaleria.png in Resources */,
 				D8C4D81D1CF1E195006188EF /* SigueIcono.png in Resources */,
 				D8B69AE81CFDEFAA009ACCAD /* calendarSP.png in Resources */,
 				D8F06E191CEFA13F00858A6A /* BotonDocuemntosGrande.png in Resources */,
@@ -572,10 +608,12 @@
 				D8F06E171CEFA13F00858A6A /* BotonCreaRutaGrande.png in Resources */,
 				D8095F5B1CF1C19B001774CA /* IconoAyuda.png in Resources */,
 				D84640FD1CF9BCED00718744 /* FondoLargo.jpg in Resources */,
+				D8B373261D01EF8D004F9C03 /* Images.xcassets in Resources */,
 				D8B69AE21CFCD393009ACCAD /* DataPicker.png in Resources */,
 				D8F06E091CEF972000858A6A /* fondo.jpg in Resources */,
 				D8F06E211CF0518B00858A6A /* logofondo.png in Resources */,
 				D84640F51CF9B1E200718744 /* BotonCierra.png in Resources */,
+				D8F7CBA61D031AED00ADC3B4 /* DJIPlaybackMultiSelectViewController_iPhone6+.xib in Resources */,
 				D84641011CF9DA5100718744 /* peligro.jpg in Resources */,
 				D8C4D8211CF1E2E2006188EF /* IconoVuleve.png in Resources */,
 				D8D46B971CF73E8800A846C5 /* PlanVueloOperacional.jpg in Resources */,
@@ -610,9 +648,11 @@
 				D8B69AF11CFE0EEE009ACCAD /* GrabacionViewController.m in Sources */,
 				D8F06DF51CEE2DF700858A6A /* AyudaViewController.m in Sources */,
 				D8F06DAB1CEE0D0A00858A6A /* AppDelegate.m in Sources */,
-				D8F06E681CF0C53100858A6A /* GaleriaViewController.m in Sources */,
+				D8F7CBA01D031AD200ADC3B4 /* DJIRootViewController.m in Sources */,
+				D8F7CB9F1D031AD200ADC3B4 /* DJIPlaybackMultiSelectViewController.m in Sources */,
 				D8F06DF11CEE2DB300858A6A /* CrearRutaViewController.m in Sources */,
 				D8F06E651CF0B2AA00858A6A /* FormularioViewController.m in Sources */,
+				D8B373291D01F017004F9C03 /* GaleriaViewController.m in Sources */,
 				D8F06DA81CEE0D0A00858A6A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -761,19 +801,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/COMPandGO",
-					"$(PROJECT_DIR)/COMPandGO/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/COMPandGO/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(inherited)",
+					"\"$(SRCROOT)/COMPandGO/Frameworks/VideoPreviewer/ffmpeg/include\"",
 				);
 				INFOPLIST_FILE = COMPandGO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/COMPandGO/Frameworks/VideoPreviewer/ffmpeg/lib",
+					"$(PROJECT_DIR)/COMPandGO/Frameworks/VideoPreviewer/DJIH264Decoder/lib",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = TUT.COMPandGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -784,20 +828,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/COMPandGO",
-					"$(PROJECT_DIR)/COMPandGO/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/COMPandGO/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(inherited)",
+					"\"$(SRCROOT)/COMPandGO/Frameworks/VideoPreviewer/ffmpeg/include\"",
 				);
 				INFOPLIST_FILE = COMPandGO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/COMPandGO/Frameworks/VideoPreviewer/ffmpeg/lib",
+					"$(PROJECT_DIR)/COMPandGO/Frameworks/VideoPreviewer/DJIH264Decoder/lib",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = TUT.COMPandGO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;

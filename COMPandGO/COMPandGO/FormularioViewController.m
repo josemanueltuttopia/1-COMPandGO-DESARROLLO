@@ -591,6 +591,9 @@
 {AudioServicesPlaySystemSound(BotonTipo3);}
 
 
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait ;}
+- (BOOL)shouldAutorotate {return NO;}
 
 @end
 

@@ -350,6 +350,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/VideoPreviewer/ffmpeg/include",
 					"$(PROJECT_DIR)/VideoPreviewer/DJIH264Decoder/include",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoPreviewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -387,6 +388,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/VideoPreviewer/ffmpeg/include",
 					"$(PROJECT_DIR)/VideoPreviewer/DJIH264Decoder/include",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = VideoPreviewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
