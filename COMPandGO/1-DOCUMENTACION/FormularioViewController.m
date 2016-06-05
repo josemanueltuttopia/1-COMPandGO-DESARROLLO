@@ -35,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [ScrollVertical setScrollEnabled:YES];
-    [ScrollVertical setContentSize:CGSizeMake(768, 3058)];
+    [ScrollVertical setContentSize:CGSizeMake(768, 3248)];
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(compruebalongitud) userInfo:nil repeats:YES];
     [FlotanteMuestraPdf setHidden:YES];
     [BotonCerrarFlotante setHidden:YES];
@@ -591,9 +591,9 @@
 {AudioServicesPlaySystemSound(BotonTipo3);}
 
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+/*- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait ;}
-- (BOOL)shouldAutorotate {return NO;}
+- (BOOL)shouldAutorotate {return NO;}*/
 
 @end
 
