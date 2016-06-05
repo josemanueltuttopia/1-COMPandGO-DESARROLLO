@@ -5,9 +5,9 @@
 
 _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional del la Rioja · UNIR)_
 
-| Autor | Título | Versión |
+| Autor | Título | Versión Actual |
 |:------------- |:---------------|:---------------|
-| José Antonio Braña Pérez     | Sistema de planificación de rutas para drones. |5.0.3|
+| José Antonio Braña Pérez     | Sistema de planificación de rutas para drones. |6.0.0|
 
 | Descripción | 
 |:------------- |
@@ -15,6 +15,7 @@ _Trabajo de Fin de Grado de Ingeniería Informática (Universidad Internacional 
 
 | Versión |Cambios |
 |:------------- |:---------------|
+| 6.0.00  | Cambio de Soporte base e integración de todos los subsistemas|
 | 5.5.00  | Implementadas funciones de galería y rediseño de principal|
 | 5.4.00  | Implementadas funciones de cámara|
 | 5.3.00  | Se añade funcion en menú Principal: Grabaciones|
