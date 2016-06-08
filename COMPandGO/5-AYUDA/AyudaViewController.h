@@ -6,8 +6,9 @@
 //  Copyright © 2016 Jose Braña. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+#import <UIKit/UIKit.h> 
 @interface AyudaViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *VerAyudaOnline;
+- (IBAction)botonweb:(id)sender;
 
 @end

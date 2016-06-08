@@ -1,33 +1,39 @@
 //
-//  AyudaViewController.m
+//  InicioViewController.m
 //  COMPandGO
 //
-//  Created by Jose Braña on 19/5/16.
-//  Copyright © 2016 Jose Braña. All rights reserved.
+//  Created by Jose Braña on 6/6/16.
+//  Copyright © 2016 DJI. All rights reserved.
 //
 
-#import "AyudaViewController.h"
+#import "InicioViewController.h"
 
-@interface AyudaViewController ()
+@interface InicioViewController ()
+
+
 
 @end
 
-@implementation AyudaViewController
+@implementation InicioViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [super viewDidLoad];
 
-  
+
+
+    
+    NSURL *Boton4Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"SonidoCreaPdf" ofType:@"m4a"] ];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton4Audio, & BotonTipo4);
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation
@@ -39,7 +45,8 @@
 }
 */
 
-- (IBAction)botonweb:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.josebrana.com/compandgo"]];
+- (IBAction)Suena:(id)sender {
+        AudioServicesPlaySystemSound(BotonTipo4);
+    
 }
 @end

@@ -20,6 +20,10 @@
 }
 @end
 
+NSArray *clasePickerViewArray;
+NSArray *provinciaPickerViewArray;
+
+
 @implementation FormularioViewController
 
 
@@ -43,9 +47,18 @@
     [_SelectorDatePicker setHidden:YES];
     [CierraFechaBoton setHidden:YES];
     
+    [_CierraFlotanteClase setHidden:YES];
+    [_CierraFlotanteProvincia setHidden:YES];
+    
+    [VentanaFlotanteClase setHidden:YES];
+    [VentanaFlotanteProvincia setHidden:YES];
+    [ProvinciaPickerView setHidden:YES];
+    [ClasePickerView setHidden:YES];
+    
+    
+
     self.SelectorDatePicker.datePickerMode = UIDatePickerModeDate;
     [self.SelectorDatePicker setValue:[UIColor colorWithRed:226/255.0f green:204/255.0f blue:36/255.0f alpha:1.0f] forKey:@"textColor"];
- 
     
     //Alineaciónes verticales de contenidos de TexFields de los formularios
     NombreCompletoPilotoCampo.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
@@ -83,10 +96,58 @@
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton2Audio, & BotonTipo2);
 
     //Definición de Sonido de Boton3
-    NSURL *Boton3Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pdfsonido" ofType:@"m4a"] ];
+    NSURL *Boton3Audio = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"SonidoCreaPdf" ofType:@"m4a"] ];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)Boton3Audio, & BotonTipo3);
 
 
+    
+    
+    
+    
+    // Lista CLASE
+    
+    
+    
+    ClaseActual.text = @"Selecciona la Clase de tu Aeronave";
+    
+    
+    
+    ClasePickerView.delegate = self;
+    
+    ClasePickerView.dataSource = self;
+    
+    //Añadimos los elementos al Array
+    
+    clasePickerViewArray = @[@"Avión", @"Helicóptero", @"Multirrotor", @"Otros"];
+    
+    
+    
+    // Lista PROVINCIA
+    
+    
+    
+    ProvinciaActual.text = @"Selecciona tu Provincia";
+    
+    
+    
+    ProvinciaPickerView.delegate = self;
+    
+    ProvinciaPickerView.dataSource = self;
+    
+    
+    
+    provinciaPickerViewArray = @[@"A Coruña", @"Álava", @"Albacete", @"Alicante", @"Almería", @"Asturias", @"Ávila", @"Badajoz", @"Baleares", @"Barcelona", @"Burgos", @"Cáceres", @"Cádiz", @"Cantabria", @"Castellón", @"Ceuta", @"Ciudad Real", @"Córdoba", @"Cuenca", @"Girona", @"Granada", @"Guadalajara", @"Guipúzcoa", @"Huelva", @"Huesca", @"Jaén", @"La Rioja", @"Las Palmas", @"León", @"Lleida", @"Lugo", @"Madrid", @"Málaga", @"Melilla", @"Murcia", @"Navarra", @"Ourense", @"Palencia", @"Pontevedra", @"Salamanca", @"Santa Cruz de Tenerife", @"Segovia", @"Sevilla", @"Soria", @"Tarragona", @"Teruel", @"Toledo", @"Valencia", @"Valladolid", @"Vizcaya", @"Zamora", @"Zaragoza"];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
  
    }
 
@@ -101,9 +162,64 @@
 
 - (void) compruebalongitud
 {
-    if ([NombreCompletoPilotoCampo.text length] >=11)
-    {NombreCompletoPilotoCampo.text = [NombreCompletoPilotoCampo.text substringWithRange:NSMakeRange(0, 10)];
-    }
+    if ([NombreCompletoPilotoCampo.text length] >=33)
+    {NombreCompletoPilotoCampo.text = [NombreCompletoPilotoCampo.text substringWithRange:NSMakeRange(0, 32)];}
+    if ([DniCifNifPilotoCampo.text length] >=13)
+    {DniCifNifPilotoCampo.text = [DniCifNifPilotoCampo.text substringWithRange:NSMakeRange(0, 12)];}
+    
+    if ([TlfPilotoCampo.text length] >=14)
+    {TlfPilotoCampo.text = [TlfPilotoCampo.text substringWithRange:NSMakeRange(0, 13)];}
+
+    if ([MailPilotoCampo.text length] >=22)
+    {MailPilotoCampo.text = [MailPilotoCampo.text substringWithRange:NSMakeRange(0, 21)];}
+    
+    if ([NombreCompletoOperadorCampo.text length] >=33)
+    {NombreCompletoOperadorCampo.text = [NombreCompletoOperadorCampo.text substringWithRange:NSMakeRange(0, 32)];}
+    
+    if ([DniCifNifOperadorCampo.text length] >=15)
+    {DniCifNifOperadorCampo.text = [DniCifNifOperadorCampo.text substringWithRange:NSMakeRange(0, 14)];}
+    
+    if ([DniCifNifOperadorCampo.text length] >=13)
+    {DniCifNifOperadorCampo.text = [DniCifNifOperadorCampo.text substringWithRange:NSMakeRange(0, 12)];}
+    
+    if ([TlfOperadorCampo.text length] >=14)
+    {TlfOperadorCampo.text = [TlfOperadorCampo.text substringWithRange:NSMakeRange(0, 13)];}
+    
+    if ([MailOperadorCampo.text length] >=22)
+    {MailOperadorCampo.text = [MailOperadorCampo.text substringWithRange:NSMakeRange(0, 21)];}
+    
+    if ([MarcaCampo.text length] >=22)
+    {MarcaCampo.text = [MarcaCampo.text substringWithRange:NSMakeRange(0, 21)];}
+
+
+    
+    if ([ModeloCampo.text length] >=15)
+    {ModeloCampo.text = [ModeloCampo.text substringWithRange:NSMakeRange(0, 14)];}
+    
+    if ([NumSerieCampo.text length] >=20)
+    {NumSerieCampo.text = [NumSerieCampo.text substringWithRange:NSMakeRange(0, 19)];}
+    
+    if ([DescripcionObjetivoCampo.text length] >=45)
+    {DescripcionObjetivoCampo.text = [DescripcionObjetivoCampo.text substringWithRange:NSMakeRange(0, 44)];}
+
+    if ([LocalidadCampo.text length] >=15)
+    {LocalidadCampo.text = [LocalidadCampo.text substringWithRange:NSMakeRange(0, 14)];}
+
+    
+    if ([MunicipioCampo.text length] >=11)
+    {MunicipioCampo.text = [MunicipioCampo.text substringWithRange:NSMakeRange(0, 10)];}
+    
+    if ([DiasProhibidosCampo.text length] >=8)
+    {DiasProhibidosCampo.text = [DiasProhibidosCampo.text substringWithRange:NSMakeRange(0, 7)];}
+    if ([HorasProhibidas.text length] >=8)
+    {HorasProhibidas.text = [HorasProhibidas.text substringWithRange:NSMakeRange(0, 7)];}
+    
+    
+    if ([AltitudMaximaCampo.text length] >=6)
+    {AltitudMaximaCampo.text = [AltitudMaximaCampo.text substringWithRange:NSMakeRange(0, 5)];}
+    
+    if ([AlcanceVisualMaximoCampo.text length] >=7)
+    {AlcanceVisualMaximoCampo.text = [AlcanceVisualMaximoCampo.text substringWithRange:NSMakeRange(0, 6)];}
 }
 
 //COMTROLADOR DE EMAIL------------------------------------------------------------------//
@@ -165,8 +281,8 @@
             UIFont *tipografiaPdf = [UIFont fontWithName:@"AmericanTypewriter" size:46.f];
             NSDictionary *misAtributos = @{ NSFontAttributeName:tipografiaPdf};
     //DEFINICIÓN DE TIPOGRAFÍA DE LA FECHA DEL PDF GENERADO
-            //UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f]; -----SIN USAR
-            //NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha}; -----SIN USAR
+            UIFont *tipografiafecha = [UIFont fontWithName:@"AmericanTypewriter" size:55.f];
+            NSDictionary *misAtributosFecha = @{ NSFontAttributeName:tipografiafecha};
     //DEFINICIÓN DE TIPOGRAFÍA DE LOS PUNTOS DE LOS CHECKS (PEQUEÑOS)
             UIFont *tipografiapunto = [UIFont fontWithName:@"AmericanTypewriter" size:200.f];
             NSDictionary *misAtributospunto = @{ NSFontAttributeName:tipografiapunto};
@@ -178,32 +294,31 @@
     
         //NombreCompletoPiloto
             CGRect areaTextoNombreCompletoPiloto = CGRectMake(750, 350, 2480, 3508);
-        //NSString *NombreCompletoPilotoPdf = NombreCompletoPilotoCampo.text;
-            NSString *NombreCompletoPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *NombreCompletoPilotoPdf = NombreCompletoPilotoCampo.text;
         //DniCifNifPiloto
             CGRect areaTextoDniCifNifPilotoCampo = CGRectMake(581, 416, 2480, 3508);
-            NSString *DniCifNifPilotoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *DniCifNifPilotoPdf = DniCifNifPilotoCampo.text;
         //TlfPilotoCampo
             CGRect areaTlfPilotoCampo = CGRectMake(1706, 416, 2480, 3508);
-            NSString *TlfPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *TlfPilotoCampoPdf = TlfPilotoCampo.text;
         //MailPilotoCampo
             CGRect areaMailPilotoCampo = CGRectMake(364, 481, 2480, 3508);
-            NSString *MailPilotoCampoPdf = @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *MailPilotoCampoPdf = MailPilotoCampo.text;
 
     //INFORMACION DEL OPERADOR--------------------------------------------------------//
     
         //NombreCompletoOperador
             CGRect areaNombreCompletoOperadorCampo = CGRectMake(758, 677, 2480, 3508);
-            NSString *NombreCompletoOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *NombreCompletoOperadorPdf =  NombreCompletoOperadorCampo.text;
         //DniCifNifOperador
             CGRect areaDniCifNifOperadorCampo = CGRectMake(585, 745, 2480, 3508);
-            NSString *DniCifNifOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *DniCifNifOperadorPdf =  DniCifNifOperadorCampo.text;
         //TlfPilotoOeprador
             CGRect areaTlfOperadorCampo = CGRectMake(1680, 745, 2480, 3508);
-            NSString *TlfOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv1";
+            NSString *TlfOperadorPdf =  TlfOperadorCampo.text;
         //MailOperadorCampo
             CGRect areaMailOperadorCampo = CGRectMake(362, 810, 2480, 3508);
-            NSString *MailOperadorPdf =  @"AASSDggggkkjdfsfgaòrwv121341234";
+            NSString *MailOperadorPdf = MailOperadorCampo.text;
     
     //INFORMACION DE LA AERONAVE------------------------------------------------------//
     
@@ -212,13 +327,13 @@
             NSString *ClasePdf =  @"AASSDggggkkjdfsfgaò";
         //MarcaCampo
             CGRect areaMarcaCampo = CGRectMake(1756, 1006, 2478, 3508);
-            NSString *MarcaPdf =  @"AASSDggggkkjdfsfgaò";
+            NSString *MarcaPdf =  MarcaCampo.text;
         //NumSerieCampo
             CGRect areaNumSerieCampo = CGRectMake(1833, 1073, 2480, 3508);
-            NSString *NumSeriePdf =  @"AASSDggggkkjdfsf";
+            NSString *NumSeriePdf =  NumSerieCampo.text;
         //ModeloCampo
             CGRect areaModeloCampo = CGRectMake(446, 1073, 2480, 3508);
-            NSString *ModeloPdf =  @"AASSDggggkkjdfsfgaòrwv";
+            NSString *ModeloPdf =  ModeloCampo.text;
     
     //TIPO DE VUELO-------------------------------------------------------------------//
     
@@ -269,16 +384,16 @@
             NSString *EVLOSPdf =   @"·";
         //DescripcionObjetivoCampo
             CGRect areaDescripcionObjetivoCampo = CGRectMake(601, 2316, 2480, 3508);
-            NSString *DescripcionObjetivoPdf =   @"AASSDggggkkjdfsfgaò";
+            NSString *DescripcionObjetivoPdf =   DescripcionObjetivoCampo.text;
         //MunicipioCampo
             CGRect areaMunicipioCampo = CGRectMake(1332, 2387, 2480, 3508);
-            NSString *MunicipioPdf =   @"AASSDggggkkj";
+            NSString *MunicipioPdf =   MunicipioCampo.text;
         //LocalidadCampo
             CGRect areaLocalidadCampo = CGRectMake(535, 2387, 2480, 3508);
-            NSString *LocalidadPdf =   @"AASSDggggkk";
+            NSString *LocalidadPdf =   LocalidadCampo.text;
         //ProvinciaCampo
             CGRect areaProvinciaCampo = CGRectMake(2063, 2387, 2480, 3508);
-            NSString *ProvinciaPdf =   @"AASSDggg";
+            NSString *ProvinciaPdf =   ProvinciaCampo.text;
 
     
     //RESTRICCIONES DE LA OPERACIÓN--------------------------------------------------//
@@ -297,16 +412,16 @@
             //NSString *ProhibidoHorasPdf =   @"·"; -----SIN USAR
         //DiasProhibidosCampo
             CGRect areaDiasProhibidosCampo = CGRectMake(1113, 2649, 2480, 3508);
-            NSString *DiasProhibidosPdf =  @"AASSDggg";
+            NSString *DiasProhibidosPdf =  DiasProhibidosCampo.text;
         //AlcanceVisualMaximoCampo
             CGRect areaAlcanceVisualMaximoCampo = CGRectMake(2128, 2649, 2480, 3508);
-            NSString *AlcanceVisualMaximoPdf =  @"AASgSD";
+            NSString *AlcanceVisualMaximoPdf =  AlcanceVisualMaximoCampo.text;
         //HorarioProhibidoCampo
             CGRect areaHorarioProhibidoCampo = CGRectMake(1113, 2706, 2480, 3508);
-            NSString *HorarioProhibidoPdf =  @"AASSDg";
+            NSString *HorarioProhibidoPdf = HorasProhibidas.text;
         //AltitudMaximaCampo
             CGRect areaAltitudMaximaCampo = CGRectMake(1926,2706, 2480, 3508);
-            NSString *AltitudMaximaPdf =  @"ADggg";
+            NSString *AltitudMaximaPdf =  AltitudMaximaCampo.text;
     
     //METEOROLOGÍA-------------------------------------------------------------//
     
@@ -336,8 +451,9 @@
     //FECHA DE LA OPERACIÓN--------------------------------------------------//
     
         //FechaCampo
-       // CGRect areaFechaCampo = CGRectMake(2022, 3295, 2480, 3508);
-       // NSString *FechaCampoPdf =  @"12-12-2016";
+       CGRect areaFechaCampo = CGRectMake(2022, 3295, 2480, 3508);
+       NSString *FechaCampoPdf = @"·";
+    //FechaActual.text;
 
         //SelectorTipoOperacion
         //CGRect areaSelectorTipoOperacion = CGRectMake(0, 0, 2480, 3508);//
@@ -485,11 +601,182 @@
 
     
     //FECHA DE LA OPERACIÓN---------------------------------------------------------//
-    //[FechaCampoPdf drawInRect:areaFechaCampo withAttributes:misAtributosFecha];
+        [FechaCampoPdf drawInRect:areaFechaCampo withAttributes:misAtributosFecha];
     
     //[SelectorTipoPdf drawInRect:areaSelectorTipoOperacion withAttributes:misAtributos];
 }
 }
+
+// Lista CLASE y Lista PROVINCIA
+
+
+
+- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    if (pickerView == ClasePickerView){
+        NSString *claseSeleccionada = [clasePickerViewArray objectAtIndex:row];
+        ClaseActual.text = claseSeleccionada;
+    }
+    else if (pickerView == ProvinciaPickerView){
+   
+        NSString *provinciaSeleccionada = [provinciaPickerViewArray objectAtIndex:row];
+    
+        ProvinciaActual.text = provinciaSeleccionada;
+    }
+    
+}
+
+
+
+// Lista CLASE y Lista PROVINCIA: el número de filas de nuestro PickerView. Queremos que sea el número de elementos de nuestro Array (clasePickerViewArray y provinciaPickerViewArray, respectivamente). No hace falta poner el número exacto, si no que usamos el .count
+
+
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+
+
+
+{
+    
+    
+    
+    if (pickerView == ClasePickerView){
+        
+        
+        
+        return clasePickerViewArray.count;
+        
+        
+        
+    }
+    
+    
+    
+    if
+        
+        (pickerView == ProvinciaPickerView){
+            
+            
+            
+            return provinciaPickerViewArray.count;
+            
+            
+            
+        }
+    
+    
+    
+    else
+        
+        return 0;
+    
+    
+    
+}
+
+
+
+// Lista CLASE y Lista PROVINCIA: aquí definimos el número de columnas de los PickerView. Los nuestros solamente tienen una columna.
+
+
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+
+
+
+{
+    
+    
+    
+    if (pickerView == ClasePickerView){
+        
+        
+        
+        return 1;
+        
+        
+        
+    }
+    
+    
+    
+    else if (pickerView == ProvinciaPickerView){
+        
+        
+        
+        return 1;
+        
+        
+        
+    }
+    
+    
+    
+    else
+        
+        return 0;
+    
+    
+    
+}
+
+
+
+// Lista CLASE y Lista PROVINCIA
+
+
+
+-(NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+
+
+
+{
+    
+    if (pickerView == ClasePickerView){
+        
+        
+        
+        return clasePickerViewArray[row];
+        
+        
+        
+    }
+    
+    
+    
+    else if (pickerView == ProvinciaPickerView){
+        
+        
+        
+        return provinciaPickerViewArray[row];
+        
+        
+        
+    }
+    
+    
+    
+    else
+        
+        return nil;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -506,7 +793,13 @@
         NSArray *ruta = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *directorioArchivo = [ruta objectAtIndex:0];
         NSString *rutaPdfConNombreArchivo = [directorioArchivo stringByAppendingPathComponent:nombreArchivo];
-            [self CrearPdf:rutaPdfConNombreArchivo];
+        [self CrearPdf:rutaPdfConNombreArchivo];
+     UIAlertView *pdfCreadoCorrectamente = [[UIAlertView alloc] initWithTitle:@"Plan de Vuelo Preliminar generado correctamente." message:@"Antes de proceder a su envío se recomienda verificar todos sus campos (COMPRUEBA PDF)." delegate:self cancelButtonTitle:@"ENTENDIDO" otherButtonTitles:nil];
+    
+     [pdfCreadoCorrectamente show];
+    
+    
+    
 }
 
 //MUESTRA VENTANA FLOTANTE DEL PDF-------------------------------------------------------//
@@ -533,7 +826,7 @@
     NSString *emailTitle = @"Plan de Vuelo Preliminar";
     
     //Contenido del eMail
-    NSString *messageBody = @"Se adjunta archivo Pdf con documentación relativa al Plan de Vuelo Operacional programado en cumplimiento de la normativa legal vigente para la realización de vuelos con drones en espacio aéreo español y no controlado, según la especificaciones de la Agencia Estatal de Seguridad Aérea ";
+    NSString *messageBody = @"Se adjunta archivo Pdf con documentación relativa al Plan de Vuelo Operacional programado, en cumplimiento de la normativa legal vigente para la realización de vuelos no tripulados pilotados a distacia en un espacio aéreo no controlado y dentro del territorio español, según la especificaciones de la Agencia Estatal de Seguridad Aérea (AESA).";
     
     //Archivo Adjunto
     NSArray *ruta = NSSearchPathForDirectoriesInDomains
@@ -580,7 +873,45 @@
 - (IBAction)IntroduceFechaBoton:(id)sender{
     [FlotanteSelectorFecha setHidden:NO];
     [_SelectorDatePicker setHidden:NO];
-    [CierraFechaBoton setHidden:NO];}
+    [CierraFechaBoton setHidden:NO];
+
+}
+
+- (IBAction)AccionCierraFlotanteClase:(id)sender {
+  
+    
+    [_CierraFlotanteClase setHidden:YES];
+    [VentanaFlotanteClase setHidden:YES];
+    [ClasePickerView setHidden:YES];
+    
+}
+
+- (IBAction)AccionCierraFlotanteProvincia:(id)sender {
+    [_CierraFlotanteProvincia setHidden:YES];
+    [VentanaFlotanteProvincia setHidden:YES];
+    [ProvinciaPickerView setHidden:YES];
+ 
+}
+
+- (IBAction)cambiaClase:(id)sender {
+    
+    [_CierraFlotanteClase setHidden:NO];
+    [VentanaFlotanteClase setHidden:NO];
+        [ClasePickerView setHidden:NO];
+    
+    
+    
+    
+    
+    
+
+}
+
+- (IBAction)CambiaProvincia:(id)sender {
+    [_CierraFlotanteProvincia setHidden:NO];
+    [VentanaFlotanteProvincia setHidden:NO];
+      [ProvinciaPickerView setHidden:NO];
+}
 
 - (IBAction)SuenaClick:(id)sender
 {AudioServicesPlaySystemSound(BotonTipo2);}
@@ -590,10 +921,6 @@
 - (IBAction)Suenapdf:(id)sender
 {AudioServicesPlaySystemSound(BotonTipo3);}
 
-
-/*- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationPortrait ;}
-- (BOOL)shouldAutorotate {return NO;}*/
 
 @end
 

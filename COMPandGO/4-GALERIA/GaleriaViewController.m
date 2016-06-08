@@ -792,7 +792,5 @@
     }
 
 }
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationLandscapeLeft;}
-- (BOOL)shouldAutorotate {return NO;}
+
 @end

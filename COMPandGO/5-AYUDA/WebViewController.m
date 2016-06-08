@@ -1,33 +1,36 @@
 //
-//  AyudaViewController.m
+//  WebViewController.m
 //  COMPandGO
 //
-//  Created by Jose Braña on 19/5/16.
-//  Copyright © 2016 Jose Braña. All rights reserved.
+//  Created by Jose Braña on 7/6/16.
+//  Copyright © 2016 DJI. All rights reserved.
 //
 
-#import "AyudaViewController.h"
+#import "WebViewController.h"
 
-@interface AyudaViewController ()
+@interface WebViewController ()
 
 @end
 
-@implementation AyudaViewController
+@implementation WebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [super viewDidLoad];
+    NSURL *WebCompandgo = [NSURL URLWithString:@"http://www.google.es"];
+    NSURLRequest *Request = [NSURLRequest requestWithURL:WebCompandgo];
+    [_PaginaWeb loadRequest:Request];
 
-  
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 
+    
+    
+    
+    
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation
@@ -39,7 +42,4 @@
 }
 */
 
-- (IBAction)botonweb:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.josebrana.com/compandgo"]];
-}
 @end

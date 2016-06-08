@@ -18,7 +18,7 @@
 #import <AudioToolbox/AudioToolbox.h> //Para reproducir sonidos
 
 
-@interface FormularioViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@interface FormularioViewController : UIViewController <MFMailComposeViewControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 {
     SystemSoundID BotonTipo1;
     SystemSoundID BotonTipo2;
@@ -51,6 +51,13 @@
     IBOutlet UITextField *MunicipioCampo;
     IBOutlet UITextField *ProvinciaCampo;
     IBOutlet UITextField *DiasProhibidosCampo;
+    
+    IBOutlet UITextField *HorasProhibidas;
+    
+    
+    IBOutlet UIImageView *VentanaFlotanteProvincia;
+    
+    IBOutlet UIImageView *VentanaFlotanteClase;
     IBOutlet UITextField *AltitudMaximaCampo;
     IBOutlet UITextField *AlcanceVisualMaximoCampo;
     IBOutlet UITextField *Fecha;
@@ -87,6 +94,22 @@
     //Etiquetas
     IBOutlet UILabel *FechaActual;
 
+    IBOutlet UILabel *ClaseActual;
+    
+    
+    IBOutlet UILabel *ProvinciaActual;
+    
+    
+    IBOutlet UIPickerView *ProvinciaPickerView;
+    
+    
+    IBOutlet UIPickerView *ClasePickerView;
+    
+    
+
+    
+    
+    
     
 //BOTONES VENTANA FLOTANTE PARA ABRIR Y CERRAR------------------------------------------//
      __weak IBOutlet UIButton *BotonCerrarFlotante;
@@ -104,6 +127,18 @@
 - (IBAction)OcultarTeclado:(id)sender;//---------------OCULTA TECLADO
 - (IBAction)CierraFechaBoton:(id)sender;//-------------OCULTA TFECHA
 - (IBAction)IntroduceFechaBoton:(id)sender;//----------MUESTRA TFECHA
+@property (strong, nonatomic) IBOutlet UIButton *CierraFlotanteProvincia;
+@property (weak, nonatomic) IBOutlet UIButton *CierraFlotanteClase;
+
+- (IBAction)AccionCierraFlotanteClase:(id)sender;
+
+- (IBAction)AccionCierraFlotanteProvincia:(id)sender;
+
+
+- (IBAction)cambiaClase:(id)sender;
+
+- (IBAction)CambiaProvincia:(id)sender;
+
 
 - (IBAction)SuenaClick:(id)sender;
 - (IBAction)SuenaBoton:(id)sender;
